@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--ícono en la barra del buscador-->
+    <link rel="shortcut icon" href="../images/favicon-hospital-de-la-caridad.png">
+<!--Hoja de CSS-->
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title> Especialidades </title>
+</head>
+<body>
+
+    <div class="gridContainer">
+        <div class="gridItem box1">
+            <form class="childOneForm" method="post"> 
+            <!--Espacio para el buscador de la página donde se ingresarán consultas-->
+            <input type="search" style="width:350px; height: 25px;  padding-left: 20px; font-size: 15px; border-radius: 8px;" placeholder="Buscar en la página" name="search" required>
+            <!--botón de BÚSQUEDA-->
+            <input type="submit" style="background-color:rgb(98, 49, 109);color: white; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bold; border-radius: 10px; width:100px; height: 27px; margin: 0.5cm; font-size: 15px;" value="BUSCAR">
+            </form>
+        </div>
+        <div class="gridItem box2">
+            <img src="../images/logo-hospital-de-la-caridad.png" alt="logo e isotipo de Hospital de la Caridad de San Martín de Porres">
+        </div>
+        <div class="gridItem box3">
+            <a class="childTwo" href="./iniciar-sesion.html"> Iniciar Sesión </a>
+        </div>
+        <div class="gridItem box4">
+            <div class="flexContainer">
+                <!--Lista de enlaces internos del site-->
+                    <div> <a class="flexContainerMenu" href="../index.html"> HOME </a> </div>
+                    <div> <a class="flexContainerMenu" href="../pages/especialidades.html"> ESPECIALIDADES </a> </div>
+                    <div> <a class="flexContainerMenu" href="../pages/servicios.html"> SERVICIOS </a> </div>
+                    <div> <a class="flexContainerMenu" href="../pages/reservatucita.html"> CITAS </a> </div>
+                    <div> <a class="flexContainerMenu" href="../pages/contactanos.html"> CONTÁCTANOS </a> </div>
+            </div>            
+        </div>
+    </div>
+
+<!--3 imágenes importantes describen el site-->
+    <section>
+        <img style="width: 100%; padding-top: 20px; padding-bottom: 20px;" src="../images/especialidades.jpg" alt="grupo de fotos de doctores">
+    </section>
+
+<!--Lista de especialidades-->
+    <div class="flexEspecialidades">
+        <div class="especialidad">
+            <h3 class="especialidadTitulo"> CARDIOLOGÍA </h3>
+            <p class="especialidadTexto">Especialidad que se encarga del  estudio, diagnóstico, tratamiento y prevención de  las enfermedades del corazón y los vasos sanguíneos, es decir, del aparato cardiovascular. Hay una serie de enfermedades cardiovasculares, pero las enfermedades del corazón y la circulación más comunes son: Hipertensión arterial (presión alta); enfermedad coronaria (angina, infartos, dolor de pecho); arritmias cardiacas (palpitaciones, taquicardias, mareos, desmayos); insuficiencia cardiaca (fatiga intensa, cansancio rápido, hinchazón de las piernas). </p>
+            <p class="especialidadSubtitulo">Doctores de la especialidad :</p>
+            <ul class="listaDoctores">
+                <li>Figueroa, Roberto</li>
+                <li>Ascencio, Manuel</li>
+            </ul>
+            <aside class="cita">
+                <a href="./reservatucita.html"> Solicita tu Cita </a>
+            </aside>
+        </div>
+
+        <div class="especialidad">
+            <h3 class="especialidadTitulo"> DERMATOLOGÍA </h3>
+            <p class="especialidadTexto">Es la especialidad médica encargada de estudiar la estructura y funciones de la piel, así como los problemas y enfermedades que la afectan. Nuestra Unidad de Dermatología dispone de un destacado staff de médicos dermatólogos especialistas, dedicados a la prevención y tratamiento de todos los trastornos de la piel, que incluye las mucosas tanto de los labios, boca, como de los genitales; así como de sus anexos, conformados por los pelos y las uñas.</p>
+            <p class="especialidadSubtitulo">Doctores de la especialidad :</p>
+            <ul class="listaDoctores">
+                <li>Albornoz, Vidal</li>
+                <li>Dawson, Roberto</li>
+            </ul>
+            <aside class="cita">
+                <a href="./reservacita.html"> Solicita tu Cita </a>
+            </aside>
+
+        </div>
+
+        <div class="especialidad">
+            <h3 class="especialidadTitulo"> GASTROENTEROLOGÍA </h3>
+            <p class="especialidadTexto">Diagnóstico, tratamiento y prevención de los trastornos y enfermedades del aparato digestivo y sus anexos. Dicho aparato comienza en el esófago, extendiéndose hasta el ano, incluyendo estómago, intestino delgado (duodeno, yeyuno, íleon) e intestino grueso (colon, ciego y recto), hígado, vesícula biliar y páncreas. Contamos con diversos métodos de diagnóstico tanto invasivos como no invasivos. Asimismo, una unidad de evaluación endoscópica, en donde se realizan las endoscopías y colonoscopías diagnósticas y terapéuticas con equipos modernos y de calidad comprobada. </p>
+            <p class="especialidadSubtitulo">Doctores de la especialidad :</p>
+            <ul class="listaDoctores">
+                <li>Casas, Diego</li>
+                <li>Escobar, Federico</li>
+                <li>Fernandez, Fidel</li>
+            </ul>
+            <aside class="cita">
+                <a href="./reservacita.html"> Solicita tu Cita </a>
+            </aside>
+
+        </div>
+
+        <div class="especialidad">
+            <h3 class="especialidadTitulo"> MEDICINA GENERAL </h3>
+            <p class="especialidadTexto">Es el primer nivel de atención médica. La consulta está orientada al abordaje integral del paciente en su aspecto físico, mental y social. Dependiendo del caso se procede a la identificación de factores de riesgo para enfermedades latentes o potenciales en corto, mediano y largo plazo; orientando al paciente sobre la manera más adecuada de prevenirlas e incentivando estilos de vida saludables. El médico general es el profesional capacitado para realizar el diagnóstico y tratamiento de diferentes patologías comunes de manera ambulatoria y derivar al especialista indicado cuando corresponda. </p>
+            <p class="especialidadSubtitulo">Doctores de la especialidad :</p>
+            <ul class="listaDoctores">
+                <li>Robles, Orlando</li>
+                <li>Zuñiga, Enrique</li>
+                <li>Sotelo, Amelia</li>
+                <li>Villa, Adalberto</li>
+            </ul>
+            <aside class="cita">
+                <a href="./reservacita.html"> Solicita tu Cita </a>
+            </aside>
+
+        </div>
+
+        <div class="especialidad">
+            <h3 class="especialidadTitulo"> MEDICINA FÍSICA Y REHABILITACIÓN </h3>
+            <p class="especialidadTexto">Especialidad médica que permite la asistencia integral enfocada en controlar el dolor y mejorar su capacidad funcional, acompañando a los tratamientos indicados por algunas otras especialidades médicas. Ellos logran en un primer momento controlar el dolor, y en una segunda fase flexibilizar y fortalecer la musculatura. Finalmente, en la tercera fase acondicionan todo el cuerpo para que el paciente mejore su independencia funcional y se reincorporen a sus actividades cotidianas en el más corto plazo posible. Existen muchas patologías, sobre todo las relacionadas al Sistema Músculo Esquelético, que requieren una  intervención multidisciplinaria. Por ejemplo las lumbalgias, cervicalgias, postoperados de columna, fracturas, esguinces o   contusiones de cadera, rodilla, tobillo, hombro, codo, muñeca, y dedos.</p>
+            <p class="especialidadSubtitulo">Doctores de la especialidad :</p>
+            <ul class="listaDoctores">
+                <li>Almeriz, Gustavo</li>
+                <li>Barrantes, Isidora</li>
+                <li>Dianderas, Gustavo</li>
+                <li>Luna, Pedro</li>
+            </ul>
+            <aside class="cita">
+                <a href="./reservacita.html"> Solicita tu Cita </a>
+            </aside>
+
+        </div>
+
+        <div class="especialidad">
+            <h3 class="especialidadTitulo"> NUTRICIÓN </h3>
+            <p class="especialidadTexto">busca mejorar la calidad de vida de las personas a través de tratamientos dietoterapéuticos y educación alimentaria nutricional. Se crean planes nutricionales de alimentación a medida para cada paciente, los cuales son establecidos de acuerdo a las metas que se han trazado en lo que respecta a peso y medidas. Dicha evaluación permite un enfoque integral para determinar el estado nutricional mediante la historia médica, nutricional y farmacológica. El examen físico, las medidas antropométricas y los datos de laboratorio, permiten tomar acciones para prevenir el desarrollo de enfermedades. Nuestros nutricionistas se enfocan en la evaluación integral del paciente. Eso significa conocer más allá de la problemática nutricional y comprender su estilo de vida, hábitos, rutinas y emociones.  </p>
+            <p class="especialidadSubtitulo">Doctores de la especialidad :</p>
+            <ul class="listaDoctores">
+                <li>Krammer, Olenka</li>
+                <li>Castillo, Odeth</li>
+                <li>Nieves, David</li>
+            </ul>
+            <aside class="cita">
+                <a href="./reservacita.html"> Solicita tu Cita </a>
+            </aside>
+
+        </div>
+
+        <div class="especialidad">
+            <h3 class="especialidadTitulo"> ODONTOLOGÍA </h3>
+            <p class="especialidadTexto">Nos encargamos de solucionar los problemas primarios que presenten los pacientes realizando una exhaustiva historia clínica para establecer un diagnóstico y un plan de tratamiento. A partir  de las particularidades de cada paciente y de la complejidad de las patologías, se le deriva al equipo de especialistas que realizarán el abordaje terapéutico y el seguimiento al tratamiento. </p>
+            <p class="especialidadSubtitulo">Doctores de la especialidad :</p>
+            <ul class="listaDoctores">
+                <li>Cisneros, Alberto</li>
+                <li>Diaz, Raúl</li>
+                <li>Escudero, Milagros</li>
+                <li>Guevara, Guido</li>
+            </ul>
+            <aside class="cita">
+                <a href="./reservacita.html"> Solicita tu Cita </a>
+            </aside>
+
+        </div>
+
+        <div class="especialidad">
+            <h3 class="especialidadTitulo"> PSICOLOGÍA </h3>
+            <p class="especialidadTexto">Nuestros psicólogos identifican, relacionan e integran conocimientos teóricos referidos a la psicología como ciencia y como profesión, haciendo uso crítico, pertinente y eficaz de ellos, de acuerdo con diferentes contextos socioculturales. Realizamos evaluaciones psicológicas integrales, terapia individual, terapia de pareja, terapia familiar,  orientación vocacional y seguimiento de casos a niños, adolescentes y adultos.  </p>
+            <p class="especialidadSubtitulo">Doctores de la especialidad :</p>
+            <ul class="listaDoctores">
+                <li>Galindo, Roxana</li>
+                <li>Miota, Roel</li>
+                <li>Silva, Hernando</li>
+                <li>Vizcarra, Roxana</li>
+            </ul>
+            <aside class="cita">
+                <a href="./reservacita.html"> Solicita tu Cita </a>
+            </aside>
+
+        </div>
+    </div>
+
+<!--Footer de Página-->
+    <footer>
+        <div class="flexFooter">
+            <div class="part1">
+                <h3> Enlaces de Interés </h3>
+                <ul>
+                    <li> Trabaja con nosotros </li>
+                    <li> Términos y condiciones </li>
+                    <li> Políticas de privacidad </li>
+                    <li> Libro de reclamaciones </li>
+                </ul>
+            </div>                                       
+            
+            <div class="part2">
+                <h3>Boletin Informativo</h3>
+                <p> Suscríbete a nuestro boletín y entérate de las novedades que tenemos para ti </p>
+                    
+                <form action="#" method="post">
+                <!--espacio para ingresar el correo electrónico-->
+                <input type="email" style="width:400px; height: 25px; padding-left: 10px; font-size: 11px; border-radius: 5px; margin-right: 10px;" placeholder="Ingresa tu correo electrónico" name="email">
+                <!--botón de ENVIAR-->
+                <input class="parte2Submit" type="submit" style="color:white; font-family: 'Montserrat', sans-serif; background-color: rgb(0, 0, 153);
+                font-weight: bold; width:100px; height: 27px; border-radius: 8px;" value="ENVIAR">
+                </form>
+                <p class="notaParte2"> * Suscribiéndote, aceptas los Términos de Privacidad del Hospital de la Caridad de San Martín de Porres </p>
+            </div>
+
+            <div class="part3">
+                <h3> Redes Sociales</h3>
+                <p> Encuéntranos en: </p>
+                <img class="homeImageRedes" src="../images/logo-facebook.png" alt="logo red social facebook">
+                <img class="homeImageRedes" src="../images/logo-instagram.png" alt="logo red social instagram">
+            </div>
+        </div>
+
+            <div class="parte4">
+                <hr color="white" /><!--línea corta-->
+                <p class="parte4texto"> Hospital de la Caridad de San Martin de Porres, 2022 </p>
+            </div>
+
+    </footer>
+
+    
+</body>
+</html>

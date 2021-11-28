@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--ícono en la barra del buscador-->
+    <link rel="shortcut icon" href="./images/favicon-hospital-de-la-caridad.png">
+<!--Hoja de CSS-->
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>Hospital de la Caridad</title>
+</head>
+<body>
+
+    <div class="gridContainer">
+        <div class="gridItem box1">
+            <form class="childOneForm" method="post"> 
+            <!--Espacio para el buscador de la página donde se ingresarán consultas-->
+            <input type="search" style="width:350px; height: 25px;  padding-left: 20px; font-size: 15px; border-radius: 8px;" placeholder="Buscar en la página" name="search" required>
+            <!--botón de BÚSQUEDA-->
+            <input type="submit" style="background-color:rgb(98, 49, 109);color: white; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bold; border-radius: 10px; width:100px; height: 27px; margin: 0.5cm; font-size: 15px;" value="BUSCAR">
+            </form>
+        </div>
+        <div class="gridItem box2">
+            <img src="./images/logo-hospital-de-la-caridad.png" alt="logo e isotipo de Hospital de la Caridad de San Martín de Porres">
+        </div>
+        <div class="gridItem box3">
+            <a class="childTwo" href="../web/pages/iniciar-sesion.html"> Iniciar Sesión </a>
+        </div>
+        <div class="gridItem box4">
+            <div class="flexContainer">
+                <!--Lista de enlaces internos del site-->
+                    <div> <a class="flexContainerMenu" href="./index.html"> HOME </a> </div>
+                    <div> <a class="flexContainerMenu" href="./pages/especialidades.html"> ESPECIALIDADES </a> </div>
+                    <div> <a class="flexContainerMenu" href="./pages/servicios.html"> SERVICIOS </a> </div>
+                    <div> <a class="flexContainerMenu" href="./pages/reservatucita.html"> CITAS </a> </div>
+                    <div> <a class="flexContainerMenu" href="./pages/contactanos.html"> CONTÁCTANOS </a> </div>
+            </div>            
+        </div>
+    </div>
+
+    <!--3 Slider con imágenes de las campañas vigentes del hospital-->
+    <div id="container">
+        <ul class="slider">
+            <li id="slide1"><img src="./images/campaña-salud.jpg" alt="hospital de la caridad campaña médica salud y nutrición">
+            </li>
+            <li id="slide2"><img src="./images/especialidades-médicas.jpg" alt="hospital de la caridad especialidades médicas">
+            </li>
+            <li id="slide3"><img src="./images/pruebas-covid.jpg" alt="hospital de la caridad pruebas serológicas covid">
+            </li>
+        </ul>
+
+        <ul class="menu">
+            <li>
+                <a href="#slide1">1</a>
+            </li>
+            <li>
+                <a href="#slide2">2</a>
+            </li>
+            <li>
+                <a href="#slide3">3</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="flexContainerBody">
+        <div class="flexRow">
+            <div class="child1">
+                <h3 class="titulos"> NOSOTROS </h3>
+                <p> Esta obra caritativa y social que nació el 2020, es promovida por la Orden Dominica y su nombre viene del título “Martín de la Caridad”, que le dio el Papa San Juan XXIII a San Martín de Porres. El nuevo hospital cuenta con profesionales con amplia experiencia y reconocimiento, además de contar con una buena infraestructura y equipos modernos. Su modelo de gestión le permite cubrir el costo de atención de las personas que menos tienen, cumpliendo así una de las principales obras de Martin de Porres, la caridad para con los más necesitados. Los responsables de esta obra son el P. Luis Enrique Ramírez Camacho y el P. Rómulo Vásquez Gavidia, actual prior provincial. La dirección del hospital está a cargo del doctor Valiery Cersso Vergara. </p>
+            </div>
+
+            <div class="child2">
+                <img src="./images/hospital-de-la-caridad-fachada.jpg" alt="fachada del hospital de la caridad en su sede Lima">
+            </div>
+        </div>
+        
+        <div class="flexRow">
+            <div class="child3">
+                <h3 class="titulos"> MISIÓN </h3>
+                <p> Servicio y atención a los que más lo necesitan.</p>
+            </div>
+
+            <div class="child4">
+                <h3 class="titulos"> VISIÓN </h3>
+                <p> Ser un centro hospitalario que ofrezca hasta 30 especialidades y cubrir todas las necesidades de los pacientes. </p>
+            </div>
+        </div>
+
+        <div class="flexRow">
+            <div class="child5">
+                <h3 class="titulos"> COMPROMISO </h3>
+                <p> "Yo te curo, Dios te sana" </p>
+            </div>
+        </div>
+
+        <div class="flexRow">
+            <div class="child6">
+                <h3 class="titulos"> NUESTRA SEDE </h3>
+                <p> A la fecha contamos con una sola sede, la misma que se encuentra en el centro de la ciudad de Lima, en Jr. Callao, frente a lo que fue la casa de otra santa limeña, Santa Rosa de Lima. </p>
+            </div>
+        
+            <div class="child7">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15608.017810045114!2d-77.0361134!3d-12.0432141!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa2acec83c306f930!2sHOSPITAL%20DE%20LA%20CARIDAD%20DE%20SAN%20MARTIN%20DE%20PORRES!5e0!3m2!1ses!2spe!4v1636747052953!5m2!1ses!2spe" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="flexFooter">
+            <div class="part1">
+                <h3> Enlaces de Interés </h3>
+                <ul>
+                    <li> Trabaja con nosotros </li>
+                    <li> Términos y condiciones </li>
+                    <li> Políticas de privacidad </li>
+                    <li> Libro de reclamaciones </li>
+                </ul>
+            </div>                                       
+            
+            <div class="part2">
+                <h3>Boletin Informativo</h3>
+                <p> Suscríbete a nuestro boletín y entérate de las novedades que tenemos para ti </p>
+                    
+                <form action="#" method="post">
+                <!--espacio para ingresar el correo electrónico-->
+                <input type="email" style="width:400px; height: 25px; padding-left: 10px; font-size: 11px; border-radius: 5px; margin-right: 10px;" placeholder="Ingresa tu correo electrónico" name="email">
+                <!--botón de ENVIAR-->
+                <input class="parte2Submit" type="submit" style="color:white; font-family: 'Montserrat', sans-serif; background-color: rgb(0, 0, 153);
+                font-weight: bold; width:100px; height: 27px; border-radius: 8px;" value="ENVIAR">
+                </form>
+                <p class="notaParte2"> * Suscribiéndote, aceptas los Términos de Privacidad del Hospital de la Caridad de San Martín de Porres </p>
+            </div>
+
+            <div class="part3">
+                <h3> Redes Sociales</h3>
+                <p> Encuéntranos en: </p>
+                <img class="homeImageRedes" src="./images/logo-facebook.png" alt="logo red social facebook">
+                <img class="homeImageRedes" src="./images/logo-instagram.png" alt="logo red social instagram">
+            </div>
+        </div>
+
+            <div class="parte4">
+                <hr color="white" /><!--línea corta-->
+                <p class="parte4texto"> Hospital de la Caridad de San Martin de Porres, 2022 </p>
+            </div>
+
+    </footer>
+
+    
+</body>
+</html>
