@@ -8,7 +8,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: auto;
-    gap: 10px;
+    gap: 20px;
     grid-template-areas:
     "box1 box1"
     "box2 box3"
@@ -36,6 +36,7 @@
 }
 
 .box3 {
+    text-decoration: none;
     grid-area: box3;
     justify-content:flex-end;
     align-items:flex-end;
@@ -45,28 +46,22 @@
     color: rgb(98, 49, 109);
     line-height: 1.8;
     padding-right: 32px;
+    border: solid 0px black;
+
 }
 
 .childTwo {
-    text-decoration:none;
-    color: rgb(98, 49, 109);
+    text-decoration: none;
 }
 
-.box4 {
-    grid-area: box4;
-    justify-content:flex-end;
-    align-items:flex-end;
-    background-color: rgb(98, 49, 109);
-}
-
-/*  Empieza contenedor de los enlaces interiores del website  */
+/* Empieza contenedor de los enlaces interiores del website  */
 .flexContainer{
     display: flex;
     flex-wrap: wrap;
     text-decoration: none;
     list-style-type: none;
     border: solid 0px black;
-    padding: 10px;
+    padding: 0px 10px;
 }
 
 .flexContainerMenu{
@@ -76,18 +71,61 @@
     font-size: 17px;
     border: solid 0px black;
     border-radius: 3px;
-    padding: 8px 30px 8px 30px;
     background-color:rgb(98, 49, 109);
     color: white;
-    margin: 3px;
+    margin: 0px;
 }
 
-.flexContainerMenu:hover{
-    background-color:white;
+  
+.flexContainer a{
+    display: block;
+    width: auto;
+    height: 40px;
+    padding: 0px 40px;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .3s;
+  }
+  
+.flexContainer a span{
+    position: relative;
+    z-index: 2;
+  }
+  
+.flexContainer a:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #ffe601;
+    transition: all .35s;
+  }
+  
+.flexContainer a:hover{
     color: rgb(98, 49, 109);
-    transition: .3s ease all;
+  }
+  
+.flexContainer a:hover:after{
+    width: 100%;
+  }
 
+.box4 {
+    grid-area: box4;
+    justify-content:flex-end;
+    align-items:flex-end;
+    background-color: rgb(98, 49, 109);
+    border: solid 0px black;
+    height: 40px;
 }
+
 
 /*  Empieza container del Slider y Slider*/
 #container {
