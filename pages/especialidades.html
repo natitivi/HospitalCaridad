@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--ícono en la barra del buscador-->
     <link rel="shortcut icon" href="../images/favicon-hospital-de-la-caridad.png">
-<!--Hoja de CSS-->
+<!--CSS boostrap-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--Hoja de CSS-->
     <link rel="stylesheet" href="../css/estilos.css">
     <title> Especialidades </title>
 </head>
@@ -46,129 +48,183 @@
     </section>
 
 <!--Lista de especialidades-->
-    <div class="flexEspecialidades">
-        <div class="especialidad">
-            <h3 class="especialidadTitulo"> CARDIOLOGÍA </h3>
-            <p class="especialidadTexto">Especialidad que se encarga del  estudio, diagnóstico, tratamiento y prevención de  las enfermedades del corazón y los vasos sanguíneos, es decir, del aparato cardiovascular. Hay una serie de enfermedades cardiovasculares, pero las enfermedades del corazón y la circulación más comunes son: Hipertensión arterial (presión alta); enfermedad coronaria (angina, infartos, dolor de pecho); arritmias cardiacas (palpitaciones, taquicardias, mareos, desmayos); insuficiencia cardiaca (fatiga intensa, cansancio rápido, hinchazón de las piernas). </p>
-            <p class="especialidadSubtitulo">Doctores de la especialidad :</p>
+<div class="containerBody">
+
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            CARDIOLOGÍA
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Especialidad que se encarga del estudio, diagnóstico, tratamiento y prevención de  las enfermedades del corazón y los vasos sanguíneos, es decir, del aparato cardiovascular. Hay una serie de enfermedades cardiovasculares, pero las enfermedades del corazón y la circulación más comunes son: Hipertensión arterial (presión alta); enfermedad coronaria (angina, infartos, dolor de pecho); arritmias cardiacas (palpitaciones, taquicardias, mareos, desmayos); insuficiencia cardiaca (fatiga intensa, cansancio rápido, hinchazón de las piernas).
+            <p> <strong>Doctores de la especialidad :</strong> </p>
             <ul class="listaDoctores">
-                <li>Figueroa, Roberto</li>
-                <li>Ascencio, Manuel</li>
-            </ul>
-            <aside class="cita">
-                <a href="./reservatucita.html"> Solicita tu Cita </a>
-            </aside>
+              <li>Figueroa, Roberto</li>
+              <li>Ascencio, Manuel</li>
+          </ul>
+          <aside class="cita">
+              <a href="./reservatucita.html"> Solicita tu Cita </a>
+          </aside>
+  
+          </div>
         </div>
-
-        <div class="especialidad">
-            <h3 class="especialidadTitulo"> DERMATOLOGÍA </h3>
-            <p class="especialidadTexto">Es la especialidad médica encargada de estudiar la estructura y funciones de la piel, así como los problemas y enfermedades que la afectan. Nuestra Unidad de Dermatología dispone de un destacado staff de médicos dermatólogos especialistas, dedicados a la prevención y tratamiento de todos los trastornos de la piel, que incluye las mucosas tanto de los labios, boca, como de los genitales; así como de sus anexos, conformados por los pelos y las uñas.</p>
-            <p class="especialidadSubtitulo">Doctores de la especialidad :</p>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            DERMATOLOGÍA
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Es la especialidad médica encargada de estudiar la estructura y funciones de la piel, así como los problemas y enfermedades que la afectan. Nuestra Unidad de Dermatología dispone de un destacado staff de médicos dermatólogos especialistas, dedicados a la prevención y tratamiento de todos los trastornos de la piel, que incluye las mucosas tanto de los labios, boca, como de los genitales; así como de sus anexos, conformados por los pelos y las uñas.
+            <p> <strong>Doctores de la especialidad :</strong> </p>
             <ul class="listaDoctores">
-                <li>Albornoz, Vidal</li>
-                <li>Dawson, Roberto</li>
-            </ul>
-            <aside class="cita">
-                <a href="./reservacita.html"> Solicita tu Cita </a>
-            </aside>
-
-        </div>
-
-        <div class="especialidad">
-            <h3 class="especialidadTitulo"> GASTROENTEROLOGÍA </h3>
-            <p class="especialidadTexto">Diagnóstico, tratamiento y prevención de los trastornos y enfermedades del aparato digestivo y sus anexos. Dicho aparato comienza en el esófago, extendiéndose hasta el ano, incluyendo estómago, intestino delgado (duodeno, yeyuno, íleon) e intestino grueso (colon, ciego y recto), hígado, vesícula biliar y páncreas. Contamos con diversos métodos de diagnóstico tanto invasivos como no invasivos. Asimismo, una unidad de evaluación endoscópica, en donde se realizan las endoscopías y colonoscopías diagnósticas y terapéuticas con equipos modernos y de calidad comprobada. </p>
-            <p class="especialidadSubtitulo">Doctores de la especialidad :</p>
-            <ul class="listaDoctores">
-                <li>Casas, Diego</li>
-                <li>Escobar, Federico</li>
-                <li>Fernandez, Fidel</li>
-            </ul>
-            <aside class="cita">
-                <a href="./reservacita.html"> Solicita tu Cita </a>
-            </aside>
-
-        </div>
-
-        <div class="especialidad">
-            <h3 class="especialidadTitulo"> MEDICINA GENERAL </h3>
-            <p class="especialidadTexto">Es el primer nivel de atención médica. La consulta está orientada al abordaje integral del paciente en su aspecto físico, mental y social. Dependiendo del caso se procede a la identificación de factores de riesgo para enfermedades latentes o potenciales en corto, mediano y largo plazo; orientando al paciente sobre la manera más adecuada de prevenirlas e incentivando estilos de vida saludables. El médico general es el profesional capacitado para realizar el diagnóstico y tratamiento de diferentes patologías comunes de manera ambulatoria y derivar al especialista indicado cuando corresponda. </p>
-            <p class="especialidadSubtitulo">Doctores de la especialidad :</p>
-            <ul class="listaDoctores">
-                <li>Robles, Orlando</li>
-                <li>Zuñiga, Enrique</li>
-                <li>Sotelo, Amelia</li>
-                <li>Villa, Adalberto</li>
+              <li>Albornoz, Vidal</li>
+              <li>Dawson, Roberto</li>
             </ul>
             <aside class="cita">
                 <a href="./reservacita.html"> Solicita tu Cita </a>
             </aside>
-
+          </div>
         </div>
-
-        <div class="especialidad">
-            <h3 class="especialidadTitulo"> MEDICINA FÍSICA Y REHABILITACIÓN </h3>
-            <p class="especialidadTexto">Especialidad médica que permite la asistencia integral enfocada en controlar el dolor y mejorar su capacidad funcional, acompañando a los tratamientos indicados por algunas otras especialidades médicas. Ellos logran en un primer momento controlar el dolor, y en una segunda fase flexibilizar y fortalecer la musculatura. Finalmente, en la tercera fase acondicionan todo el cuerpo para que el paciente mejore su independencia funcional y se reincorporen a sus actividades cotidianas en el más corto plazo posible. Existen muchas patologías, sobre todo las relacionadas al Sistema Músculo Esquelético, que requieren una  intervención multidisciplinaria. Por ejemplo las lumbalgias, cervicalgias, postoperados de columna, fracturas, esguinces o   contusiones de cadera, rodilla, tobillo, hombro, codo, muñeca, y dedos.</p>
-            <p class="especialidadSubtitulo">Doctores de la especialidad :</p>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            GASTROENTEROLOGÍA
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Diagnóstico, tratamiento y prevención de los trastornos y enfermedades del aparato digestivo y sus anexos. Dicho aparato comienza en el esófago, extendiéndose hasta el ano, incluyendo estómago, intestino delgado (duodeno, yeyuno, íleon) e intestino grueso (colon, ciego y recto), hígado, vesícula biliar y páncreas. Contamos con diversos métodos de diagnóstico tanto invasivos como no invasivos. Asimismo, una unidad de evaluación endoscópica, en donde se realizan las endoscopías y colonoscopías diagnósticas y terapéuticas con equipos modernos y de calidad comprobada.<p> <strong>Doctores de la especialidad :</strong> </p>
             <ul class="listaDoctores">
-                <li>Almeriz, Gustavo</li>
-                <li>Barrantes, Isidora</li>
-                <li>Dianderas, Gustavo</li>
-                <li>Luna, Pedro</li>
+              <li>Casas, Diego</li>
+              <li>Escobar, Federico</li>
+              <li>Fernandez, Fidel</li>
             </ul>
             <aside class="cita">
                 <a href="./reservacita.html"> Solicita tu Cita </a>
             </aside>
-
+          </div>
         </div>
-
-        <div class="especialidad">
-            <h3 class="especialidadTitulo"> NUTRICIÓN </h3>
-            <p class="especialidadTexto">busca mejorar la calidad de vida de las personas a través de tratamientos dietoterapéuticos y educación alimentaria nutricional. Se crean planes nutricionales de alimentación a medida para cada paciente, los cuales son establecidos de acuerdo a las metas que se han trazado en lo que respecta a peso y medidas. Dicha evaluación permite un enfoque integral para determinar el estado nutricional mediante la historia médica, nutricional y farmacológica. El examen físico, las medidas antropométricas y los datos de laboratorio, permiten tomar acciones para prevenir el desarrollo de enfermedades. Nuestros nutricionistas se enfocan en la evaluación integral del paciente. Eso significa conocer más allá de la problemática nutricional y comprender su estilo de vida, hábitos, rutinas y emociones.  </p>
-            <p class="especialidadSubtitulo">Doctores de la especialidad :</p>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFour">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            MEDICINA GENERAL
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Es el primer nivel de atención médica. La consulta está orientada al abordaje integral del paciente en su aspecto físico, mental y social. Dependiendo del caso se procede a la identificación de factores de riesgo para enfermedades latentes o potenciales en corto, mediano y largo plazo; orientando al paciente sobre la manera más adecuada de prevenirlas e incentivando estilos de vida saludables. El médico general es el profesional capacitado para realizar el diagnóstico y tratamiento de diferentes patologías comunes de manera ambulatoria y derivar al especialista indicado cuando corresponda.
+            <p> <strong>Doctores de la especialidad :</strong> </p>
             <ul class="listaDoctores">
-                <li>Krammer, Olenka</li>
-                <li>Castillo, Odeth</li>
-                <li>Nieves, David</li>
+              <li>Robles, Orlando</li>
+              <li>Zuñiga, Enrique</li>
+              <li>Sotelo, Amelia</li>
+              <li>Villa, Adalberto</li>
+        </ul>
+            <aside class="cita">
+                <a href="./reservacita.html"> Solicita tu Cita </a>
+            </aside>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFive">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+            MEDICINA FÍSICA Y REHABILITACIÓN
+          </button>
+        </h2>
+        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Especialidad médica que permite la asistencia integral enfocada en controlar el dolor y mejorar su capacidad funcional, acompañando a los tratamientos indicados por algunas otras especialidades médicas. Ellos logran en un primer momento controlar el dolor, y en una segunda fase flexibilizar y fortalecer la musculatura. Finalmente, en la tercera fase acondicionan todo el cuerpo para que el paciente mejore su independencia funcional y se reincorporen a sus actividades cotidianas en el más corto plazo posible. Existen muchas patologías, sobre todo las relacionadas al Sistema Músculo Esquelético, que requieren una  intervención multidisciplinaria. Por ejemplo las lumbalgias, cervicalgias, postoperados de columna, fracturas, esguinces o   contusiones de cadera, rodilla, tobillo, hombro, codo, muñeca, y dedos.
+            <p> <strong>Doctores de la especialidad :</strong> </p>
+            <ul class="listaDoctores">
+              <li>Almeriz, Gustavo</li>
+              <li>Barrantes, Isidora</li>
+              <li>Dianderas, Gustavo</li>
+              <li>Luna, Pedro</li>
             </ul>
             <aside class="cita">
                 <a href="./reservacita.html"> Solicita tu Cita </a>
             </aside>
-
+          </div>
         </div>
-
-        <div class="especialidad">
-            <h3 class="especialidadTitulo"> ODONTOLOGÍA </h3>
-            <p class="especialidadTexto">Nos encargamos de solucionar los problemas primarios que presenten los pacientes realizando una exhaustiva historia clínica para establecer un diagnóstico y un plan de tratamiento. A partir  de las particularidades de cada paciente y de la complejidad de las patologías, se le deriva al equipo de especialistas que realizarán el abordaje terapéutico y el seguimiento al tratamiento. </p>
-            <p class="especialidadSubtitulo">Doctores de la especialidad :</p>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingSix">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+            NUTRICIÓN
+          </button>
+        </h2>
+        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Busca mejorar la calidad de vida de las personas a través de tratamientos dietoterapéuticos y educación alimentaria nutricional. Se crean planes nutricionales de alimentación a medida para cada paciente, los cuales son establecidos de acuerdo a las metas que se han trazado en lo que respecta a peso y medidas. Dicha evaluación permite un enfoque integral para determinar el estado nutricional mediante la historia médica, nutricional y farmacológica. El examen físico, las medidas antropométricas y los datos de laboratorio, permiten tomar acciones para prevenir el desarrollo de enfermedades. Nuestros nutricionistas se enfocan en la evaluación integral del paciente. Eso significa conocer más allá de la problemática nutricional y comprender su estilo de vida, hábitos, rutinas y emociones. 
+            <p> <strong>Doctores de la especialidad :</strong> </p>
             <ul class="listaDoctores">
-                <li>Cisneros, Alberto</li>
-                <li>Diaz, Raúl</li>
-                <li>Escudero, Milagros</li>
-                <li>Guevara, Guido</li>
+              <li>Krammer, Olenka</li>
+              <li>Castillo, Odeth</li>
+              <li>Nieves, David</li>
+        </ul>
+            <aside class="cita">
+                <a href="./reservacita.html"> Solicita tu Cita </a>
+            </aside>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingSeven">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+            ODONTOLOGÍA
+          </button>
+        </h2>
+        <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Nos encargamos de solucionar los problemas primarios que presenten los pacientes realizando una exhaustiva historia clínica para establecer un diagnóstico y un plan de tratamiento. A partir  de las particularidades de cada paciente y de la complejidad de las patologías, se le deriva al equipo de especialistas que realizarán el abordaje terapéutico y el seguimiento al tratamiento.
+            <p> <strong>Doctores de la especialidad :</strong> </p>
+            <ul class="listaDoctores">
+              <li>Cisneros, Alberto</li>
+              <li>Diaz, Raúl</li>
+              <li>Escudero, Milagros</li>
+              <li>Guevara, Guido</li>
+        </ul>
+            <aside class="cita">
+                <a href="./reservacita.html"> Solicita tu Cita </a>
+            </aside>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingEight">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+            PSICOLOGÍA
+          </button>
+        </h2>
+        <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Nuestros psicólogos identifican, relacionan e integran conocimientos teóricos referidos a la psicología como ciencia y como profesión, haciendo uso crítico, pertinente y eficaz de ellos, de acuerdo con diferentes contextos socioculturales. Realizamos evaluaciones psicológicas integrales, terapia individual, terapia de pareja, terapia familiar,  orientación vocacional y seguimiento de casos a niños, adolescentes y adultos.
+            <p> <strong>Doctores de la especialidad :</strong> </p>
+            <ul class="listaDoctores">
+              <li>Galindo, Roxana</li>
+              <li>Miota, Roel</li>
+              <li>Silva, Hernando</li>
+              <li>Vizcarra, Roxana</li>
             </ul>
             <aside class="cita">
                 <a href="./reservacita.html"> Solicita tu Cita </a>
             </aside>
-
+          </div>
         </div>
-
-        <div class="especialidad">
-            <h3 class="especialidadTitulo"> PSICOLOGÍA </h3>
-            <p class="especialidadTexto">Nuestros psicólogos identifican, relacionan e integran conocimientos teóricos referidos a la psicología como ciencia y como profesión, haciendo uso crítico, pertinente y eficaz de ellos, de acuerdo con diferentes contextos socioculturales. Realizamos evaluaciones psicológicas integrales, terapia individual, terapia de pareja, terapia familiar,  orientación vocacional y seguimiento de casos a niños, adolescentes y adultos.  </p>
-            <p class="especialidadSubtitulo">Doctores de la especialidad :</p>
-            <ul class="listaDoctores">
-                <li>Galindo, Roxana</li>
-                <li>Miota, Roel</li>
-                <li>Silva, Hernando</li>
-                <li>Vizcarra, Roxana</li>
-            </ul>
-            <aside class="cita">
-                <a href="./reservacita.html"> Solicita tu Cita </a>
-            </aside>
-
-        </div>
+      </div>
     </div>
-
+  
+  </div>
+  
 <!--Footer de Página-->
     <footer>
         <div class="flexFooter">
@@ -211,6 +267,8 @@
 
     </footer>
 
+    <!--Bundle JAVA-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     
 </body>
 </html>
