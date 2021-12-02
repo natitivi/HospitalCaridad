@@ -13,24 +13,59 @@
     <title> Especialidades </title>
 </head>
 <body>
+  <nav class="navbar navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand"></a>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Buscar en la página" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit"> BUSCAR </button>
+      </form>
+    </div>
+  </nav>
 
-    <div class="gridContainer">
-        <div class="gridItem box1">
-            <form class="childOneForm" method="post"> 
-            <!--Espacio para el buscador de la página donde se ingresarán consultas-->
-            <input type="search" style="width:350px; height: 25px;  padding-left: 20px; font-size: 15px; border-radius: 8px;" placeholder="Buscar en la página" name="search" required>
-            <!--botón de BÚSQUEDA-->
-            <input type="submit" style="background-color:rgb(98, 49, 109);color: white; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            font-weight: bold; border-radius: 10px; width:100px; height: 27px; margin: 0.5cm; font-size: 15px;" value="BUSCAR">
-            </form>
-        </div>
-        <div class="gridItem box2">
-            <img src="../images/logo-hospital-de-la-caridad.png" alt="logo e isotipo de Hospital de la Caridad de San Martín de Porres">
-        </div>
-        <div class="gridItem box3">
-            <a id="childTwo" href="./iniciar-sesion.html"> Iniciar Sesión </a>
-        </div>
-        <div class="gridItem box4">
+  <div class="gridContainer">
+    
+    <div class="gridItem box2">
+        <img src="../images/logo-hospital-de-la-caridad.png" alt="logo e isotipo de Hospital de la Caridad de San Martín de Porres">
+    </div>
+
+    <div class="gridItem box3">
+
+<!--BOTON INICIAR SESION-->
+<div class="containerBodyCuenta">
+  <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Iniciar Sesión</button>
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <h5 class="tituloInicioSesion" id="offcanvasRightLabel">INICIAR SESIÓN</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+
+<!--PRUEBA FORMULARIO dentro de INICIAR SESION-->
+<div class="contenedorFormulario">
+  <!--espacio para ingresar correo electrónico-->
+  <form method="post"> 
+      <h2 class="formularioSesionSubtitulo">Correo electrónico</h2>
+      <input class="formularioSesionSubtitulo1" type="email" placeholder="Correo electrónico" name="email"></p>
+  </form>
+  <!--espacio para ingresar contraseña-->
+  <form method="post"> 
+      <h2 class="formularioSesionSubtitulo">Contraseña</h2>
+      <input class="formularioSesionSubtitulo1" type="password" placeholder="Contraseña" name="password"></p>
+  </form>
+  <!--botón de ENVIAR-->
+  <form method="post"> 
+      <input class="formularioEnviar" type="submit" value="ENVIAR">
+  </form>
+</div>
+<!--FIN DE PRUEBA FORMULARIO-->
+</div>
+</div>
+</div>
+      
+    </div>
+            <div class="gridItem box4">
             <div class="flexContainer">
                 <!--Lista de enlaces internos del site-->
                     <div> <a class="flexContainerMenu" href="../index.html"> <span> HOME </span></a> </div>

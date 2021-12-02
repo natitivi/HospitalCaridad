@@ -22,7 +22,7 @@
     justify-content: center;
     align-items:center;
 }
-
+/* 
 .box1 {
     grid-area: box1;
     background-color: rgb(235, 235, 235);
@@ -30,6 +30,23 @@
     justify-content:flex-end;
     align-items:center;
 }
+*/
+/*Navbar de búsqueda que sustituyó al box1*/
+.form-control{
+    width: 380px;
+}
+
+.d-flex .btn-outline-success {
+    border-color: rgb(98, 49, 109);
+    color: rgb(98, 49, 109);
+    width: 100px;
+}
+
+.d-flex .btn-outline-success:hover{
+    background-color:rgb(98, 49, 109);
+    color: white;
+}
+/*fin navbar de búsqueda*/
 
 .box2 {
     grid-area: box2;
@@ -49,10 +66,77 @@
     border: solid 0px black;
 
 }
-
+/*
 .childTwo {
     text-decoration: none;
 }
+*/
+
+/* Botón inicio de sesión con OffCanvas a la derecha - sustituyó al childTwo */
+.containerBodyCuenta{
+    border: solid 0px black;
+    
+}
+
+.containerBodyCuenta .btn {
+    width: 100px;
+}
+
+.containerBodyCuenta .btn:hover{
+    background-color:rgb(98, 49, 109);
+    color: white;
+    border-radius: 5px;
+}
+
+.containerBodyCuenta .btn-secondary{
+    width: fit-content;
+}
+
+.contenedorFormulario{
+    margin: 30px;
+}
+
+.tituloInicioSesion{
+    color: rgb(98, 49, 109);
+    font-weight: bolder;
+    margin-left: 30px;
+}
+
+.formularioSesionSubtitulo{
+    font-size: 13.5px;
+    font-weight: bolder;
+}
+
+.formularioSesionSubtitulo1{
+    width: 300px;
+    height: 28px;
+    font-size: 13px;
+    padding-left: 10px;
+}
+
+.formularioEnviar{
+    color:white;
+    background-color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    width:120px;
+    height:32px;
+    border-radius:10px;
+    margin: 0px;
+}
+
+.formularioEnviar:hover{
+    color:white;
+    background-color: rgb(98, 49, 109);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    width:120px;
+    height:32px;
+    border-radius:10px;
+    margin: 0px;
+}
+/* Fin de Botón de inicio de Sesión*/
 
 /* Empieza contenedor de los enlaces interiores del website  */
 .flexContainer{
@@ -372,6 +456,7 @@
 
 
 /*  Empieza el contenedor de Servicios*/
+/*
 .contenedorServicios{
     display: flex;
     flex-wrap: wrap;
@@ -428,9 +513,45 @@
     background-color:rgb(98, 49, 109);
     color: white;
 }
+*/
+.listaHorario{
+    margin: 0px;
+    padding: 0px;
+}
+
+.listaHorario li{
+    list-style-type: none;
+    text-decoration: none;
+    border: solid 0px black;
+}
+
+.reserva {
+    display: flex;
+    justify-content: flex-end;
+    align-items:center;
+    padding: 0px 40px;
+}
+
+.reserva a {
+    list-style-type: none;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border: solid 0px black;
+    font-weight: bolder;
+    padding: 8px 30px;
+    border-radius: 8px;
+}
+
+.reserva a:hover{
+    background-color:rgb(98, 49, 109);
+    color: white;
+}
 
 
 /*  Inicio de Módulo de Citas Online*/
+
 .contenedorGeneral {
     padding: 30px;
     margin: 30px;
@@ -461,6 +582,56 @@ div div h2.formularioCitasSubtitulo{
     color: black;
 }
 
+/* Citas */
+.containerRservaCita{
+    margin: 70px;
+    padding: 20px;
+    border: solid 2px rgb(98, 49, 109);
+    border-radius: 15px;
+}
+
+.lineaBoton button{
+    color: white;
+    height: 30px;
+    width: fit-content;
+    font-size: 12px;
+}
+.lineaBoton button:hover{
+    color: white;
+    background-color: rgb(98, 49, 109);
+    height: 30px;
+    width: fit-content;
+    font-size: 12px;
+}
+
+.formularioCita{
+    width:275px;
+    padding: 0px 10px;
+    margin: 5px 0px;
+    height: 28px;
+    font-size: 13px;
+}
+.modal-footer .btn-secondary{
+    color: white;
+    border: none;
+}
+
+.modal-footer .btn-secondary:hover{
+    background-color: rgb(98, 49, 109);
+    color: white;
+}
+
+.modal-footer .btn-primary{
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+.modal-footer .btn-primary:hover{
+    background-color: rgb(98, 49, 109);
+    color: white;
+}
+
 /*  Empieza el contenedor de Contacto*/
 .contenedorContacto{
     display: flex;
@@ -474,8 +645,8 @@ div div h2.formularioCitasSubtitulo{
     font-size: 11pt;
 }
 .medio {
-    height: 300px;
-    width: 280px;
+    height: 400px;
+    width: 320px;
     padding: 30px;
     border: dotted 1px rgb(98, 49, 109);
     margin: 10px;
