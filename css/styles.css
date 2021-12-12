@@ -1,0 +1,361 @@
+@charset "UTF-8";
+/*  Página Principal - Index*/
+/*  Navbar Buscador*/
+.form-control {
+  width: 18.75rem; }
+
+.d-flex .btn-outline-success {
+  border-color: #62316d;
+  color: #62316d;
+  width: 6.25rem; }
+
+.d-flex .btn-outline-success:hover {
+  background-color: #62316d;
+  color: white; }
+
+/*  Contenedor de Logo e Inicio de Sesión*/
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: auto;
+  gap: 1.25rem;
+  grid-template-areas: "box1 box1" "box2 box3" "box4 box4"; }
+
+.gridItem {
+  background-color: transparent;
+  border: solid 0px black;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.box2 {
+  grid-area: box2; }
+
+.box3 {
+  text-decoration: none;
+  grid-area: box3;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bolder;
+  font-size: 1.25rem;
+  color: #62316d;
+  line-height: 1.8;
+  padding-right: 2rem;
+  border: solid 0px black; }
+
+/*  Inicio OffCanvas para registro de Inicio de Sesión*/
+.containerBodyCuenta .btn {
+  width: 6.25rem; }
+
+.containerBodyCuenta .btn:hover {
+  background-color: #62316d;
+  color: white;
+  border-radius: 0.31rem; }
+
+.containerBodyCuenta .btn-secondary {
+  width: fit-content; }
+
+.contenedorFormulario {
+  margin: 1.88rem; }
+
+.tituloInicioSesion {
+  color: #62316d;
+  font-weight: bolder;
+  margin-left: 1.88rem; }
+
+.formularioSesionSubtitulo {
+  font-size: 0.84rem;
+  font-weight: bolder; }
+
+.formularioSesionSubtitulo1 {
+  width: 18.75rem;
+  height: 1.75rem;
+  font-size: 0.81rem;
+  padding-left: 0.63rem; }
+
+.formularioEnviar {
+  color: white;
+  background-color: black;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 0.88rem;
+  width: 7.5rem;
+  height: 2rem;
+  border-radius: 0.63rem;
+  margin: 0px; }
+
+.formularioEnviar:hover {
+  color: white;
+  background-color: #62316d;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  width: 7.5rem;
+  height: 2rem;
+  border-radius: 0.63rem;
+  margin: 0px; }
+
+/*  Enlaces internos de website*/
+section {
+  width: 100%;
+  background-color: #62316d; }
+
+#btn-menu {
+  display: none; }
+
+section label {
+  display: none;
+  width: 3.44rem;
+  height: 3.44rem;
+  padding: 0.63rem; }
+
+section label:hover {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.3); }
+
+.menu ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  font-weight: bolder;
+  justify-content: flex-end; }
+
+.menu li {
+  text-align: center;
+  flex-grow: 1;
+  letter-spacing: 0.5px;
+  text-align: center;
+  position: relative;
+  transition: all .3s; }
+
+.menu li span {
+  position: relative; }
+
+.menu li:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #ffe601;
+  transition: all .35s; }
+
+.menu li:hover {
+  background: #ffe601; }
+
+.menu li a:hover {
+  color: #62316d;
+  font-weight: bolder; }
+
+.menu li a {
+  display: block;
+  padding: 0.94rem 1.25rem;
+  text-decoration: none;
+  color: #fff; }
+
+.containerBodyCuenta {
+  background-color: tomato; }
+  .containerBodyCuenta .btn {
+    width: 6.25rem; }
+  .containerBodyCuenta .btn:hover {
+    background-color: #62316d;
+    color: white;
+    border-radius: 0.31rem; }
+  .containerBodyCuenta .btn-secondary {
+    width: fit-content; }
+
+/*  Media Queries*/
+@media (max-width: 861px) {
+  .box2 img {
+    width: 520.5px;
+    height: 85.5px; }
+  .itemFooter1 {
+    display: none; }
+  .containerBody {
+    margin: 1rem;
+    padding: 1rem; } }
+
+@media (max-width: 768px) {
+  section label {
+    display: block; }
+  .menu {
+    position: absolute;
+    background: #62316d;
+    width: 70%;
+    margin-left: -70%;
+    transition: all 0.5s;
+    z-index: 2; }
+  .menu ul {
+    flex-direction: column; }
+  .menu li {
+    border-top: solid 1px white; }
+  #btn-menu:checked ~ .menu {
+    margin: 0; }
+  .box2 img {
+    width: 415px;
+    height: 68px; }
+  .contenedorSuscripcion {
+    display: flex;
+    justify-content: flex-start; } }
+
+@media (max-width: 640px) {
+  .contenedorFlex div.item {
+    background-color: #f8f8f8;
+    color: #62316d;
+    margin: 1rem 2rem;
+    padding: 2rem;
+    flex: 1 400px; }
+  .box2 img {
+    width: 307px;
+    height: 50px; }
+  .itemFooter2 {
+    margin: 0rem 3rem;
+    flex: 1 300px; }
+  .textFooterBoletin {
+    font-size: 14px; }
+  .itemFooter3 {
+    display: flex;
+    align-items: center;
+    margin: 0rem 3rem;
+    margin-top: 2rem;
+    flex: 1 300px; }
+  .itemFooter3 p {
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+    flex: 1 300px;
+    font-size: 14px; }
+  .itemFooter3 p a {
+    width: 50px;
+    height: 50px; } }
+
+@media (max-width: 640px) {
+  .item2 img {
+    width: 100%; }
+  .contenedorFooter {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center; }
+  .contenedorSuscripcion {
+    display: flex;
+    justify-content: center; }
+  .itemFooter3 {
+    padding: 0rem 3rem; } }
+
+@media (max-width: 540px) {
+  .contenedorFlex div.item {
+    margin: 0.3rem 1.3rem;
+    padding: 1.2rem;
+    flex: 1 400px; } }
+
+@media (max-width: 480px) {
+  .contenedorFlex div.item {
+    padding: 1rem; }
+  .containerBody {
+    margin: 0rem 1rem;
+    padding: 1rem; }
+  .itemFooter3 p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0; }
+  .itemFooter3 p a img {
+    width: 50px;
+    height: 50px; }
+  .itemFooter3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+  .itemFooter3 h4 {
+    font-size: 12pt; }
+  .itemFooter3 p {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+    padding: 0; } }
+
+@media (max-width: 396px) {
+  .form-control {
+    width: 16rem; }
+  .box3 {
+    display: none; }
+  .accordion-body {
+    font-size: 11pt; }
+  .cita {
+    display: flex;
+    justify-content: center;
+    padding: 20px 40px; }
+  .contenedorFlex div.item {
+    padding: 0.5rem; }
+  .contenedorSuscripcion {
+    display: flex;
+    justify-content: center; }
+  .itemFooter2 form input.sendEmail {
+    width: 300px;
+    height: 30px; }
+  form .parte2Submit {
+    width: 300px;
+    height: 30px; }
+  form .parte2Submit:hover {
+    width: 300px;
+    height: 30px; }
+  .parte4texto {
+    font-size: 11pt; }
+  .cabeceraImage {
+    display: none; } }
+
+@media (max-width: 320px) {
+  .form-control {
+    width: 11rem; }
+  .d-flex .btn-outline-success {
+    width: 4rem;
+    font-size: 10pt;
+    padding: 0; }
+  .box2 img {
+    width: 250px;
+    height: 41px; }
+  .containerSlider {
+    display: none; }
+  .contenedorFlex {
+    padding: 0;
+    margin-top: 5px;
+    margin-bottom: 5px; }
+  .contenedorFlex h3 {
+    font-size: 12pt; }
+  .contenedorFlex p {
+    font-size: 10pt; }
+  .contenedorFlex div.item {
+    background-color: transparent;
+    color: black;
+    margin: 0.1rem 0.1rem;
+    padding: 0.5rem;
+    flex: 1 200px; }
+  .contenedorFlex div iframe {
+    width: 100%; }
+  .accordion-body {
+    font-size: 10pt; }
+  .cita {
+    display: flex;
+    justify-content: center;
+    padding: 20px 40px; }
+  .cita a {
+    font-size: 11px; }
+  .containerBody {
+    margin: 0.5rem;
+    padding: 0.5rem; }
+  .itemFooter2 form input.sendEmail {
+    width: 230px;
+    height: 30px; }
+  form .parte2Submit {
+    width: 230px;
+    height: 30px; }
+  form .parte2Submit:hover {
+    width: 230px;
+    height: 30px; }
+  .itemFooter2 h4 {
+    font-size: 12pt; }
+  .parte4texto {
+    font-size: 8.5pt; } }
