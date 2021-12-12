@@ -3,18 +3,32 @@
     padding: 0;
 }
 
-/* Grid para la cabecera del website */
+/*  Página Principal - Index*/
+/*  Navbar Buscador*/
+.form-control{
+    width: 18.75rem;
+}
+.d-flex .btn-outline-success {
+    border-color: rgb(98, 49, 109);
+    color: rgb(98, 49, 109);
+    width: 6.25rem;
+}
+.d-flex .btn-outline-success:hover{
+    background-color:rgb(98, 49, 109);
+    color: white;
+}
+
+/*  Contenedor de Logo e Inicio de Sesión*/
 .gridContainer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: auto;
-    gap: 20px;
+    gap: 1.25rem;
     grid-template-areas:
     "box1 box1"
     "box2 box3"
     "box4 box4"
 }
-    
 .gridItem {
     background-color: transparent;
     border: solid 0px black;
@@ -22,36 +36,9 @@
     justify-content: center;
     align-items:center;
 }
-/* 
-.box1 {
-    grid-area: box1;
-    background-color: rgb(235, 235, 235);
-    height: 45px;
-    justify-content:flex-end;
-    align-items:center;
-}
-*/
-/*Navbar de búsqueda que sustituyó al box1*/
-.form-control{
-    width: 380px;
-}
-
-.d-flex .btn-outline-success {
-    border-color: rgb(98, 49, 109);
-    color: rgb(98, 49, 109);
-    width: 100px;
-}
-
-.d-flex .btn-outline-success:hover{
-    background-color:rgb(98, 49, 109);
-    color: white;
-}
-/*fin navbar de búsqueda*/
-
 .box2 {
     grid-area: box2;
 }
-
 .box3 {
     text-decoration: none;
     grid-area: box3;
@@ -59,130 +46,103 @@
     align-items:flex-end;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bolder;
-    font-size: 20px;
+    font-size: 1.25rem;
     color: rgb(98, 49, 109);
     line-height: 1.8;
-    padding-right: 32px;
+    padding-right: 2rem;
     border: solid 0px black;
-
-}
-/*
-.childTwo {
-    text-decoration: none;
-}
-*/
-
-/* Botón inicio de sesión con OffCanvas a la derecha - sustituyó al childTwo */
-.containerBodyCuenta{
-    border: solid 0px black;
-    
 }
 
+/*  Inicio OffCanvas para registro de Inicio de Sesión*/
 .containerBodyCuenta .btn {
-    width: 100px;
+    width: 6.25rem;
 }
-
 .containerBodyCuenta .btn:hover{
     background-color:rgb(98, 49, 109);
     color: white;
-    border-radius: 5px;
+    border-radius: 0.31rem;
 }
-
 .containerBodyCuenta .btn-secondary{
     width: fit-content;
 }
-
 .contenedorFormulario{
-    margin: 30px;
+    margin: 1.88rem;
 }
-
 .tituloInicioSesion{
     color: rgb(98, 49, 109);
     font-weight: bolder;
-    margin-left: 30px;
+    margin-left: 1.88rem;
 }
-
 .formularioSesionSubtitulo{
-    font-size: 13.5px;
+    font-size: 0.84rem;
     font-weight: bolder;
 }
-
 .formularioSesionSubtitulo1{
-    width: 300px;
-    height: 28px;
-    font-size: 13px;
-    padding-left: 10px;
+    width: 18.75rem;
+    height: 1.75rem;
+    font-size: 0.81rem;
+    padding-left: 0.63rem;
 }
-
 .formularioEnviar{
     color:white;
     background-color: black;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-    font-size: 14px;
-    width:120px;
-    height:32px;
-    border-radius:10px;
+    font-size: 0.88rem;
+    width: 7.5rem;
+    height: 2rem;
+    border-radius: 0.63rem;
     margin: 0px;
 }
-
 .formularioEnviar:hover{
     color:white;
     background-color: rgb(98, 49, 109);
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-    width:120px;
-    height:32px;
-    border-radius:10px;
+    width: 7.5rem;
+    height: 2rem;
+    border-radius: 0.63rem;
     margin: 0px;
 }
-/* Fin de Botón de inicio de Sesión*/
 
-/* Empieza contenedor de los enlaces interiores del website  */
-.flexContainer{
+/*  Enlaces internos de website*/
+section {
+    width: 100%;
+    background-color: rgb(98, 49, 109);
+}
+#btn-menu{
+    display: none;
+}
+section label {
+    display: none;
+    width: 3.44rem;
+    height: 3.44rem;
+    padding: 0.63rem;
+}
+section label:hover {
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.3);
+}
+.menu ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
     display: flex;
-    flex-wrap: wrap;
-    text-decoration: none;
-    list-style-type: none;
-    border: solid 0px black;
-    padding: 0px 10px;
+    font-weight: bolder;
+    justify-content: flex-end;
 }
-
-.flexContainerMenu{
-    text-decoration: none;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: bold;
-    font-size: 17px;
-    border: solid 0px black;
-    border-radius: 3px;
-    background-color:rgb(98, 49, 109);
-    color: white;
-    margin: 0px;
-}
-
-  
-.flexContainer a{
-    display: block;
-    width: auto;
-    height: 40px;
-    padding: 0px 40px;
-    line-height: 40px;
-    font-size: 18px;
-    font-family: sans-serif;
-    text-decoration: none;
-    color: white;
-    letter-spacing: 2px;
+.menu li{
+    text-align: center;
+    flex-grow: 1;
+    letter-spacing: 0.5px;
     text-align: center;
     position: relative;
     transition: all .3s;
-  }
-  
-.flexContainer a span{
+}
+.menu li span{
     position: relative;
-    z-index: 2;
-  }
-  
-.flexContainer a:after{
+}
+.menu li:after{
     position: absolute;
     content: "";
     top: 0;
@@ -191,229 +151,188 @@
     height: 100%;
     background: #ffe601;
     transition: all .35s;
-  }
-  
-.flexContainer a:hover{
+}
+.menu li:hover{
+    background: #ffe601;
+}
+.menu li a:hover{
     color: rgb(98, 49, 109);
-  }
-  
-.flexContainer a:hover:after{
-    width: 100%;
-  }
-
-.box4 {
-    grid-area: box4;
-    justify-content:flex-end;
-    align-items:flex-end;
-    background-color: rgb(98, 49, 109);
-    border: solid 0px black;
-    height: 40px;
+    font-weight: bolder;
 }
-
-
-/*  Empieza container del Slider y Slider
-#container {
-    margin: initial;
-    justify-content: center;
-    background-color: white;
-    max-width: 1350px;
-    width: 100%;
-    padding: 30px;
-    box-sizing: border-box;
-}
-
-#container > ul.slider {
-    position: relative;
-    max-width: 1350px;
-    width: 100%;
-    height: 550px;
-}
-
-#container > ul.slider li{
-    position: absolute;
-    left: 0;
-    top: 0;
-    opacity: 0;
-    width: inherit;
-    height: inherit;
-    background-color: white;
-    transition: opacity .5s;
-}
-
-#container > ul.slider li img{
-    width: 100%;
-    height: 550px;
-    object-fit: cover;
-}
-
-#container > ul.slider li:first-child{
-    opacity: 1;
-}
-
-#container > ul.slider li:target{
-    opacity: 1;
-}
-
-#container > .menu{
-    text-align: center;
-    padding-top: 20px;
-}
-
-#container > .menu li{
-    display: inline-block;
-    text-align: center;
-
-}
-
-#container > .menu li a{
-    display: inline-block;
-    font-family: 'Nunito', sans-serif;
-    color: white;
+.menu li a {
+    display: block;
+    padding: 0.94rem 1.25rem;    
     text-decoration: none;
-    background-color: black;
-    padding: 10px;
-    width: 20px;
-    height: 20ps;
-    font-size: 18px;
-    border-radius: 100%;
+    color: #fff;
 }
-*/
+
+/*  Empieza container del Slider  */
 .containerSlider{
     display: flex;
     justify-content: center;
     align-items:center;
     margin: 20px;
+    z-index: 1;
 }
-
 .carousel{
-    width: 1275px;
-    height: 530px;
+    width: 79rem;
+    height: auto;
+}
+.carousel-control-prev-icon {
+    background-color: grey;
+}
+.carousel-control-next-icon {
+    background-color: grey;
 }
 
-/* Empieza cuerpo de Página de Inicio - Nosotros, misión, visión, compromiso, ubicación */
-.flexContainerBody{
-    border: solid 0px black;
-    padding: 40px 0px;
-}
-
-.flexRow{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: transparent;
-    border: solid 0px black;
-    text-align: center;
-    color: rgb(98, 49, 109);
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-    gap: 10px;
-}
-
-.child1{
-    border: solid 0px black;
-    padding: 70px 100px;
-}
-
-.titulos{
-    font-family: 'Montserrat', sans-serif;
-    line-height: 1.5;
-    font-size: 17pt;
-    padding-block: 20px;
-    text-align: center;
-    color: rgb(98, 49, 109);
-}
-
-.child3, .child4 {
-    background-color: transparent;
-    border: solid 0px black;
-    width: 50%;
-    padding: 70px;
-    gap: 5px;
-}
-
-.child5 {
-    border: solid 0px black;
-    padding: 70px 200px;
-}
-
-.child6{
-    border: solid 0px black;
-    padding: 70px 100px;
-}
-
-/* Contenedor Flex para sección Especialidades*/
-/*.flexEspecialidades{
+/*  Contenedor Contenido Página Principal  */
+.contenedorFlex {
     display: flex;
     flex-wrap: wrap;
-    border: solid 0px transparent;
-    padding: 40px 120px 30px 120px;
-    color: black;
-    font-family: 'Montserrat', sans-serif;
-    line-height: 1.5;
-    font-size: 12pt;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
 }
-
-.flexEspecialidades div ul li{
-    list-style-type: none;
-    text-decoration: none;
-}
-.especialidad {
-    padding: 30px;
-    border: solid 1px rgb(98, 49, 109);
-    margin: 10px;
-}
-.especialidadTitulo {
+.contenedorFlex div.item{
+    background-color: rgb(248, 248, 248);
     color: rgb(98, 49, 109);
-    font-weight: bolder;
-    font-size: 22px;
+    margin: 1rem 3rem;
+    padding: 2rem;
+    flex: 1 400px;
 }
-
-.especialidadSubtitulo{
+.contenedorFlex2 {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.contenedorFlex div.item2{
+    background-color: rgb(248, 248, 248);
+    color: rgb(98, 49, 109);
+    flex: 1 400px;
+}
+.contenedorFlex div iframe{
+    width: auto;
+}
+h3{
     font-weight: bold;
 }
 
-.cita {
+/*  Contenedor para el Footer */
+.contenedorFooter{
     display: flex;
-    justify-content: flex-end;
-    align-items:center;
-}
-
-.especialidad .cita a {
-    list-style-type: none;
-    text-decoration: none;
-    background-color: black;
-    color: white;
-    text-align: center;
-    border: solid 0px black;
-    font-weight: bolder;
-    padding: 10px 30px;
-}
-
-.flexEspecialidades .especialidad .cita a:hover{
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-evenly;
     background-color:rgb(98, 49, 109);
     color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 10pt;
+    padding: 40px 0px;
 }
-*/
-.containerBody{
-    margin: 70px;
-    padding: 20px;
-    border: solid 2px black;
+div .itemFooter1{
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+.itemFooter1 ul{
+    list-style-type: none;
+    text-decoration: none;
+    padding: 0;
+    align-items: center;
+}
+.itemFooter2 p{
+    margin: 0;
+    padding: 0;
+}
+.itemFooter2 form input.sendEmail {
+    border: solid 1px rgb(98, 49, 109);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width:400px;
+    height: 30px;
+    padding: 10px;
+    font-size:medium;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+form .parte2Submit{
+    display: flex;
+    border: solid 1px rgb(98, 49, 109);
+    color:white; 
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: black;
+    font-weight: bold; 
+    width:400px;
+    height: 30px;
+    font-size: 13px;
+    border-radius: 10px;
+    margin: 5px 0px;
+    justify-content: center;
+}
+form .parte2Submit:hover{
+    color:rgb(98, 49, 109); 
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #ffe601;
+    font-weight: bold; 
+    width:400px;
+    height: 30px;
+    font-size: 13px;
+    border-radius: 10px;
+    margin: 5px 0px;
+}
+.contenedorSuscripcion{
+    display: flex;
+    justify-content: center;
+}
+.footerImageRedes{
+    width: 45px;
+    height: 45px;
+    padding: 5px 0px 5px 5px;
+}
+.contenedorFooter1{
+    display: flex;
+    justify-content: end;
+    background-color: rgb(98, 49, 109);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0px 35px;
+    border-top: solid 0.5px white;
+}
+.parte4texto{
+    padding-top: 5px;
+}
+h4{
+    font-weight: bolder;
 }
 
+/*  Página Especialidades  */
+.cabeceraImage{
+    background-color: transparent;
+}
+.cabeceraImage img{
+    width: 100%; 
+    padding-top: 20px; 
+    padding-bottom: 20px;
+}
+.containerBody{
+    margin: 3rem;
+    padding: 1rem;
+}
 .doctoresLista {
     display: flex;
     align-items:left;
     gap: 5px;
 }
-
 .cita {
     display: flex;
     justify-content: flex-end;
     align-items:center;
     padding: 0px 40px;
 }
-
+.cita button{
+    background-color: black;
+}
 .cita a {
     list-style-type: none;
     text-decoration: none;
@@ -425,453 +344,290 @@
     padding: 8px 30px;
     border-radius: 8px;
 }
-
 .cita a:hover{
-    background-color:rgb(98, 49, 109);
-    color: white;
+    background-color:#ffe601;
+    color: rgb(98, 49, 109);
 }
-
+.accordion-item{
+    background-color: white;
+}
 .accordion-button{
-    background-color: rgb(219, 181, 226);
-    color: black;
-    font-weight: bolder;
-}
-
-.accordion-button:hover{
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(98, 49, 109);
     color: white;
     font-weight: bolder;
 }
-
+.accordion-button:hover{
+    background-color: #ffe601;
+    color: rgb(98, 49, 109);
+    font-weight: bolder;
+}
 .listaDoctores{
     margin: 0px;
     padding: 0px;
 }
-
 .listaDoctores li{
     list-style-type: none;
     text-decoration: none;
     border: solid 0px black;
 }
 
-
-/*  Empieza el contenedor de Servicios*/
-/*
-.contenedorServicios{
-    display: flex;
-    flex-wrap: wrap;
-    border: solid 0px transparent;
-    padding: 40px 120px 30px 120px;
-    color: black;
-    font-family: 'Montserrat', sans-serif;
-    line-height: 1.5;
-    font-size: 12pt;
-}
-
-.contenedorServicios div ul li{
-    list-style-type: none;
-    text-decoration: none;
-}
-.servicio {
-    padding: 30px;
-    border: solid 1px rgb(98, 49, 109);
-    margin: 10px;
-}
-.servicioTitulo {
-    color: rgb(98, 49, 109);
-    font-weight: bolder;
-    font-size: 22px;
-}
-
-.servicioSubtitulo{
-    font-weight: bold;
-}
-
-.reserva {
-    display: flex;
-    justify-content: flex-end;
-    align-items:center;
-}
-
-.servicio .reserva a {
-    list-style-type: none;
-    text-decoration: none;
-    background-color: black;
-    color: white;
-    text-align: center;
-    border: solid 0px black;
-    font-weight: bolder;
-    padding: 10px 30px;
-}
-
-.servicio .reserva a img {
-    width: 50%;
-    height: 50%;
-}
-
-.contenedorServicios .servicio .reserva a:hover{
-    background-color:rgb(98, 49, 109);
-    color: white;
-}
-*/
-.listaHorario{
-    margin: 0px;
-    padding: 0px;
-}
-
-.listaHorario li{
-    list-style-type: none;
-    text-decoration: none;
-    border: solid 0px black;
-}
-
-.reserva {
-    display: flex;
-    justify-content: flex-end;
-    align-items:center;
-    padding: 0px 40px;
-}
-
-.reserva a {
-    list-style-type: none;
-    text-decoration: none;
-    background-color: black;
-    color: white;
-    text-align: center;
-    border: solid 0px black;
-    font-weight: bolder;
-    padding: 8px 30px;
-    border-radius: 8px;
-}
-
-.reserva a:hover{
-    background-color:rgb(98, 49, 109);
-    color: white;
-}
-
-
-/*  Inicio de Módulo de Citas Online*/
-
-.contenedorGeneral {
-    padding: 30px;
-    margin: 30px;
-    border: solid 0px rgb(98, 49, 109);
-    margin: 10px;
-}
-
-div div.contenedorFormularioCitas{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    border: solid 0px black;
-}
-
-div div h3.formularioCitasTitulo{
-    font-family: Calibri;
-    line-height: 1.5;
-    font-size: 20pt;
-    color: rgb(98, 49, 109);
-    padding: 40px;
-}
-
-div div h2.formularioCitasSubtitulo{
-    font-family: Calibri;
-    line-height: 1.5;
-    font-size: 13pt;
-    color: black;
-}
-
-/* Citas */
-.containerRservaCita{
-    margin: 70px;
-    padding: 20px;
-    border: solid 2px rgb(98, 49, 109);
-    border-radius: 15px;
-}
-
-.lineaBoton button{
-    color: white;
-    height: 30px;
-    width: fit-content;
-    font-size: 12px;
-}
-.lineaBoton button:hover{
-    color: white;
-    background-color: rgb(98, 49, 109);
-    height: 30px;
-    width: fit-content;
-    font-size: 12px;
-}
-
-.formularioCita{
-    width:275px;
-    padding: 0px 10px;
-    margin: 5px 0px;
-    height: 28px;
-    font-size: 13px;
-}
-.modal-footer .btn-secondary{
-    color: white;
-    border: none;
-}
-
-.modal-footer .btn-secondary:hover{
-    background-color: rgb(98, 49, 109);
-    color: white;
-}
-
-.modal-footer .btn-primary{
-    background-color: black;
-    color: white;
-    border: none;
-}
-
-.modal-footer .btn-primary:hover{
-    background-color: rgb(98, 49, 109);
-    color: white;
-}
-
-/*  Empieza el contenedor de Contacto*/
-.contenedorContacto{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;   
-    border: solid 0px black;
-    padding: 20px 120px 40px 120px;
-    color: black;
-    font-family: 'Montserrat', sans-serif;
-    line-height: 1.5;
-    font-size: 11pt;
-}
-.medio {
-    height: 400px;
-    width: 320px;
-    padding: 30px;
-    border: dotted 1px rgb(98, 49, 109);
-    margin: 10px;
-}
-.contactoTitulo {
-    color: rgb(98, 49, 109);
-    font-weight: bolder;
-    font-size: 22px;
-}
-.contactoSubtitulo {
-    color: black;
-    font-weight: bolder;
-    font-size: 15px;
-}
-.contactoTextoCursiva {
-    font-style:italic;
-}
-.medio:hover {
-    padding: 30px;
-    border: dotted 1px rgb(98, 49, 109);
-    margin: 10px;
-    border: solid 3px rgb(98, 49, 109);
-}
-
-/*  Inicio de Módulo de Inicio de Sesión*/
-.contenedorFormulario {
-    padding: 30px;
-    margin: 30px;
-    border: solid 0px rgb(98, 49, 109);
-    margin: 10px;
-}
-
-div div.parte1Formulario, .parte2Formulario{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    border: solid 0px black;
-}
-
-div div h3.formularioSesionTitulo{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    line-height: 1.5;
-    font-size: 20pt;
-    color: rgb(98, 49, 109);
-    padding: 15px;
-}
-
-div div h2.formularioSesionSubtitulo{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    line-height: 1.5;
-    font-size: 13pt;
-    color: black;
-}
-
-/*  Empieza el Flex para el Footer */
-.flexFooter{
-    display: flex;
-    justify-content: space-evenly;
-    background-color:rgb(98, 49, 109);
-    border: solid 0px transparent;
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-    line-height: 1.5;
-    font-size: 8.7pt;
-    padding: 40px 0px;
-}
-
-footer div.part1 ul li{
-    list-style-type: none;
-    text-decoration: none;
-}
-
-.part3{
-    text-align: right;
-}
-
-.parte4{
-    background-color:rgb(98, 49, 109);
-    text-align: right;
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-    line-height: 1.5;
-    font-size: 8.5pt;
-}
-
-.parte4texto{
-    padding: 5px 30px 10px 0px;
-}
-
-footer div div h3{
-    font-family: 'Montserrat', sans-serif;
-    line-height: 1.5;
-    font-size: 10pt;
-    padding: 0px 0px 8px 0px;
-}
-
-.homeImageRedes {
-    width: 40px;
-    height: 40px;
-    padding: 5px 0px 5px 5px;
-    
-}
-
-/* Media Queries */
-@media (max-width: 1000px) {
-    .gridContainer {
-        background-color: transparent;
-    }
-    .box1 .childOneForm {
-        display: none;
-    }
-    .box3 .childTwo {
-        display: none;
-    }
+/*  Media Queries*/
+@media (max-width:861px) {
     .box2 img {
         width: 520.5px;
         height: 85.5px;
     }
-    .flexContainerMenu{
-    text-decoration: none;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: bold;
-    font-size: 15px;
-    border: solid 0px black;
-    border-radius: 12px;
-    padding: 8px 20px 8px 20px;
-    background-color:rgb(98, 49, 109);
-    color: white;
-    margin: 3px;
+    .itemFooter1{
+        display: none;
+    }
+    .containerBody{
+        margin: 1rem;
+        padding: 1rem;
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width:768px) {
+    section label {
+        display: block;
+    }
+    .menu {
+        position: absolute;
+        background: rgb(98, 49, 109);
+        width: 70%;
+        margin-left: -70%;
+        transition: all 0.5s;
+        z-index: 2;
+    }
+    .menu ul {
+        flex-direction: column;
+    }
+    .menu li {
+        border-top: solid 1px white;
+    }
+
+    #btn-menu:checked ~ .menu {
+        margin: 0;
+    }
     .box2 img {
-        width: 442.4px;
-        height: 72.7px;
+        width: 415px;
+        height: 68px;
     }
-    .flexContainerMenu{
-    text-decoration: none;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: bold;
-    font-size: 12px;
-    border: solid 0px black;
-    border-radius: 12px;
-    padding: 8px 20px 8px 20px;
-    background-color:rgb(98, 49, 109);
-    color: white;
-    margin: 3px;
+    .contenedorSuscripcion{
+        display: flex;
+        justify-content:flex-start;
+    }    
+}
+
+@media (max-width:640px) {
+    .contenedorFlex div.item{
+        background-color: rgb(248, 248, 248);
+        color: rgb(98, 49, 109);
+        margin: 1rem 2rem;
+        padding: 2rem;
+        flex: 1 400px;
+    }    
+    .box2 img {
+        width: 307px;
+        height: 50px;
+    }
+    .itemFooter2{
+        margin: 0rem 3rem;
+        flex: 1 300px;
+    }
+    .textFooterBoletin{
+        font-size: 14px;
+    }
+    .itemFooter3{
+        display: flex;
+        align-items: center;
+        margin: 0rem 3rem;
+        margin-top: 2rem;
+        flex: 1 300px;
+    }
+    .itemFooter3 p{
+        margin-top: 1rem;
+        margin-left: 1.5rem;
+        flex: 1 300px;
+        font-size: 14px;
+    }
+    .itemFooter3 p a{
+        width: 50px;
+        height: 50px;
     }
 }
 
-@media (max-width: 1000px) {
+@media (max-width:640px) {
+    .item2 img{
+        width: 100%;
+    }
+    .contenedorFooter{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .contenedorSuscripcion{
+        display: flex;
+        justify-content:center;
+    }    
+    .itemFooter3{
+        padding: 0rem 3rem;
+    }
+}
 
-    .flexRow{
+@media (max-width:540px) {
+    .contenedorFlex div.item{
+        margin: 0.3rem 1.3rem;
+        padding: 1.2rem;
+        flex: 1 400px;
+    }
+}
+
+@media (max-width:480px) {
+    .contenedorFlex div.item{
+        padding: 1rem;
+    }
+    .containerBody{
+        margin: 0rem 1rem;
+        padding: 1rem;
+    }
+    .itemFooter3 p{
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 50px;
+        margin: 0;
+        padding: 0;
     }
-
-    .flexFooter{
+    .itemFooter3 p a img{
+        width: 50px;
+        height: 50px;
+    }
+    .itemFooter3{
         display: flex;
-        align-items: center;
-        padding: 50px;
+        flex-wrap: wrap;
+        justify-content: center;
     }
-    .part2{
+    .itemFooter3 h4{
+        font-size: 12pt;
+    }
+    .itemFooter3 p{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media (max-width:396px) {
+    .form-control{
+        width: 16rem;
+    }
+    .box3{
+        display: none;
+    }
+    .accordion-body{
+        font-size: 11pt;
+    }
+    .cita {
+        display: flex;
+        justify-content: center;
+        padding: 20px 40px;
+    }    
+    .contenedorFlex div.item{
+        padding: 0.5rem;
+    }
+    .contenedorSuscripcion{
+        display: flex;
+        justify-content:center;
+    }    
+    .itemFooter2 form input.sendEmail {
+        width:300px;
+        height: 30px;
+    }
+    form .parte2Submit{
+        width:300px;
+        height: 30px;
+    }
+    form .parte2Submit:hover{
+        width:300px;
+        height: 30px;
+    }
+    .parte4texto{
+        font-size: 11pt;
+    }
+    .cabeceraImage{
         display: none;
     }
 }
 
-@media (max-width: 600px) {
-.flexFooter .part1 {
-    display: none;
-}
-}
-
-@media (max-width: 1000px){
-    .flexEspecialidades{
-        display: flex;
-        flex-wrap: wrap;
-        border: solid 0px transparent;
-        padding: 30px 100px 20px 100px;
-        color: black;
-        font-family: 'Montserrat', sans-serif;
-        line-height: 1.5;
-        font-size: 11pt;
+@media (max-width:320px) {
+    .form-control{
+        width: 11rem;
     }
-}
-
-@media (max-width: 600px){
-    .flexEspecialidades{
-        display: flex;
-        flex-wrap: wrap;
-        border: solid 0px transparent;
-        padding: 30px 60px 20px 60px;
-        color: black;
-        font-family: 'Montserrat', sans-serif;
-        line-height: 1.5;
+    .d-flex .btn-outline-success {
+        width: 4rem;
+        font-size: 10pt;
+        padding: 0;
+    }
+    .box2 img{
+        width: 250px;
+        height: 41px;
+    }
+    .containerSlider{
+        display: none;
+    }
+    .contenedorFlex{
+        padding: 0;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .contenedorFlex h3{
+        font-size: 12pt;
+    }
+    .contenedorFlex p{
         font-size: 10pt;
     }
-}
-
-@media (max-width: 1000px){
-    .contenedorContacto{
-        display: flex;
-        flex-wrap: wrap;
-        border: solid 0px transparent;
-        padding: 30px 100px 20px 100px;
+    .contenedorFlex div.item{
+        background-color: transparent;
         color: black;
-        font-family: 'Montserrat', sans-serif;
-        line-height: 1.5;
-        font-size: 11pt;
+        margin: 0.1rem 0.1rem;
+        padding: 0.5rem;
+        flex: 1 200px;
     }
-}
-
-@media (max-width: 600px){
-    .contenedorContacto{
-        display: flex;
-        flex-wrap: wrap;
-        border: solid 0px transparent;
-        padding: 30px 60px 20px 60px;
-        color: black;
-        font-family: 'Montserrat', sans-serif;
-        line-height: 1.5;
+    .contenedorFlex div iframe{
+        width: 100%;
+    }
+    .accordion-body{
         font-size: 10pt;
+    }
+    .cita {
+        display: flex;
+        justify-content: center;
+        padding: 20px 40px;
+    }    
+    .cita a{
+        font-size: 11px;
+    }
+    .containerBody{
+        margin: 0.5rem;
+        padding: 0.5rem;
+    }    
+    .itemFooter2 form input.sendEmail {
+        width:230px;
+        height: 30px;
+    }
+    form .parte2Submit{
+        width:230px;
+        height: 30px;
+    }
+    form .parte2Submit:hover{
+        width:230px;
+        height: 30px;
+    }
+    .itemFooter2 h4{
+        font-size: 12pt;
+    }
+    .parte4texto{
+        font-size: 8.5pt;
     }
 }

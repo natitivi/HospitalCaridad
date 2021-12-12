@@ -4,199 +4,196 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!--ícono en la barra del buscador-->
+
+    <!--Favicon-->
     <link rel="shortcut icon" href="./images/favicon-hospital-de-la-caridad.png">
-<!--CSS boostrap-->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <!--Hoja de CSS-->
+    <!--CSS boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--Mi CSS-->
     <link rel="stylesheet" href="./css/estilos.css">
-    <title>Hospital de la Caridad</title>
+    <!--Titulo de la página-->
+    <title> Hospital de la Caridad </title>
 </head>
+
 <body>
+    <!--Navbar Buscador-->
     <nav class="navbar navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand"></a>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Buscar en la página" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit"> BUSCAR </button>
-          </form>
+            <a class="navbar-brand"></a>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Buscar en la página" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit"> BUSCAR </button>
+            </form>
         </div>
-      </nav>
-    
-      <div class="gridContainer">
-        
+    </nav>
+    <!--Contenedor de Logo e Inicio de sesión-->
+    <div class="gridContainer">
         <div class="gridItem box2">
             <img src="./images/logo-hospital-de-la-caridad.png" alt="logo e isotipo de Hospital de la Caridad de San Martín de Porres">
         </div>
-    
         <div class="gridItem box3">
-    
-    <!--BOTON INICIAR SESION-->
-    <div class="containerBodyCuenta">
-      <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Iniciar Sesión</button>
-    
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-      <div class="offcanvas-header">
-        <h5 class="tituloInicioSesion" id="offcanvasRightLabel">INICIAR SESIÓN</h5>
-        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body">
-    
-<!--PRUEBA FORMULARIO dentro de INICIAR SESION-->
-<div class="contenedorFormulario">
-    <!--espacio para ingresar correo electrónico-->
-    <form method="post"> 
-        <h2 class="formularioSesionSubtitulo">Correo electrónico</h2>
-        <input class="formularioSesionSubtitulo1" type="email" placeholder="Correo electrónico" name="email"></p>
-    </form>
-    <!--espacio para ingresar contraseña-->
-    <form method="post"> 
-        <h2 class="formularioSesionSubtitulo">Contraseña</h2>
-        <input class="formularioSesionSubtitulo1" type="password" placeholder="Contraseña" name="password"></p>
-    </form>
-    <!--botón de ENVIAR-->
-    <form method="post"> 
-        <input class="formularioEnviar" type="submit" value="ENVIAR">
-    </form>
-</div>
-<!--FIN DE PRUEBA FORMULARIO-->
-      </div>
-    </div>
-    </div>
-          
+        <!--Contenedor de botón de INICIAR SESION-->
+        <div class="containerBodyCuenta">
+            <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Iniciar Sesión</button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                <h5 class="tituloInicioSesion" id="offcanvasRightLabel">INICIAR SESIÓN</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <!--FORMULARIO al clickear INICIAR SESION-->
+                    <div class="contenedorFormulario">
+                        <!--espacio para ingresar correo electrónico-->
+                        <form method="post"> 
+                            <h2 class="formularioSesionSubtitulo">Correo electrónico</h2>
+                            <input class="formularioSesionSubtitulo1" type="email" placeholder="Correo electrónico" name="email"></p>
+                        </form>
+                        <!--espacio para ingresar contraseña-->
+                        <form method="post"> 
+                            <h2 class="formularioSesionSubtitulo">Contraseña</h2>
+                            <input class="formularioSesionSubtitulo1" type="password" placeholder="Contraseña" name="password"></p>
+                        </form>
+                        <!--botón de ENVIAR-->
+                        <form method="post"> 
+                            <input class="formularioEnviar" type="submit" value="ENVIAR">
+                        </form>
+                    </div>
+                    <!--FIN DE FORMULARIO-->
+                </div>
+                </div>
         </div>
-            <div class="gridItem box4">
-            <div class="flexContainer">
-                <!--Lista de enlaces internos del site-->
-                    <div> <a class="flexContainerMenu" href="./index.html"> <span> HOME </span></a> </div>
-                    <div> <a class="flexContainerMenu" href="./pages/especialidades.html"> <span> ESPECIALIDADES </span></a> </div>
-                    <div> <a class="flexContainerMenu" href="./pages/servicios.html"> <span> SERVICIOS </span></a> </div>
-                    <div> <a class="flexContainerMenu" href="./pages/reservatucita.html"> <span> CITAS </span></a> </div>
-                    <div> <a class="flexContainerMenu" href="./pages/contactanos.html"> <span> CONTÁCTANOS </span></a> </div>
-            </div>   
-        </div>   
+        </div>
     </div> 
-
-    <!--3 Slider con imágenes de las campañas vigentes del hospital-->
+    <!--Navbar enlaces internos del website-->
+    <section>
+        <input type="checkbox" id="btn-menu">
+        <label for="btn-menu"> <img src="./icons/hamburguesa-icon.png" alt="ícono menú hamburguesa desplegable"> </label>
+        <nav class="menu">
+            <ul>
+                <li><a href="./index.html">  HOME  </a></li>
+                <li><a href="./pages/especialidades.html">  ESPECIALIDADES  </a></li>
+                <li><a href="">  SERVICIOS  </a></li>
+                <li><a href="">  CITAS  </a></li>
+                <li><a href="">  CONTACTANOS  </a></li>
+            </ul>
+        </nav>
+    </section>
+    <!--Slider con imágenes de las campañas vigentes del hospital-->
     <div class="containerSlider">
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="./images/campanaNutricion.jpg" class="d-block w-100" alt="frutas y vegetales asociados a salud">
-              </div>
-              <div class="carousel-item">
-                <img src="./images/especialidadesMedicas.jpg" class="d-block w-100" alt="doctor con dispositivo">
-              </div>
-              <div class="carousel-item">
-                <img src="./images/testCovid.jpg" class="d-block w-100" alt="enfermera mostrando una prueba serológica">
-              </div>
+                <div class="carousel-item active">
+                    <img src="./images/campanaNutricion.jpg" class="d-block w-100" alt="frutas y vegetales asociados a salud">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/especialidadesMedicas.jpg" class="d-block w-100" alt="doctor con dispositivo">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/testCovid.jpg" class="d-block w-100" alt="enfermera mostrando una prueba serológica">
+                </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        </div>
     </div>
-
-    <!--Grilla con info General del Hospital-->
-    <div class="flexContainerBody">
-        <div class="flexRow">
-            <div class="child1">
-                <h3 class="titulos"> NOSOTROS </h3>
-                <p> Esta obra caritativa y social que nació el 2020, es promovida por la Orden Dominica y su nombre viene del título “Martín de la Caridad”, que le dio el Papa San Juan XXIII a San Martín de Porres. El nuevo hospital cuenta con profesionales con amplia experiencia y reconocimiento, además de contar con una buena infraestructura y equipos modernos. Su modelo de gestión le permite cubrir el costo de atención de las personas que menos tienen, cumpliendo así una de las principales obras de Martin de Porres, la caridad para con los más necesitados. Los responsables de esta obra son el P. Luis Enrique Ramírez Camacho y el P. Rómulo Vásquez Gavidia, actual prior provincial. La dirección del hospital está a cargo del doctor Valiery Cersso Vergara. </p>
+    <!--Contenedor Contenido Página Principal-->
+    <div class="contenedorFlex">
+        <div class="item">
+            <div class="contenedorFlex2">
+            <div class="item"> 
+            <h3> NOSOTROS </h3>
+            <p> Esta obra caritativa y social que nació el 2020, es promovida por la Orden Dominica y su nombre viene del título “Martín de la Caridad”, que le dio el Papa San Juan XXIII a San Martín de Porres. El nuevo hospital cuenta con profesionales con amplia experiencia y reconocimiento, además de contar con una buena infraestructura y equipos modernos. Su modelo de gestión le permite cubrir el costo de atención de las personas que menos tienen, cumpliendo así una de las principales obras de Martin de Porres, la caridad para con los más necesitados. Los responsables de esta obra son el P. Luis Enrique Ramírez Camacho y el P. Rómulo Vásquez Gavidia, actual prior provincial. La dirección del hospital está a cargo del doctor Valiery Cersso Vergara.</p>
             </div>
-
-            <div class="child2">
-                <img src="./images/hospital-de-la-caridad-fachada.jpg" alt="fachada del hospital de la caridad en su sede Lima">
+            <div class="item2"> 
+            <img src="./images/hospital-de-la-caridad-fachada.jpg" alt="fachada o ingreso principal Hospital de la Caridad">
             </div>
-        </div>
-        
-        <div class="flexRow">
-            <div class="child3">
-                <h3 class="titulos"> MISIÓN </h3>
-                <p> Servicio y atención a los que más lo necesitan.</p>
-            </div>
-
-            <div class="child4">
-                <h3 class="titulos"> VISIÓN </h3>
-                <p> Ser un centro hospitalario que ofrezca hasta 30 especialidades y cubrir todas las necesidades de los pacientes. </p>
-            </div>
-        </div>
-
-        <div class="flexRow">
-            <div class="child5">
-                <h3 class="titulos"> COMPROMISO </h3>
-                <p> "Yo te curo, Dios te sana" </p>
-            </div>
-        </div>
-
-        <div class="flexRow">
-            <div class="child6">
-                <h3 class="titulos"> NUESTRA SEDE </h3>
-                <p> A la fecha contamos con una sola sede, la misma que se encuentra en el centro de la ciudad de Lima, en Jr. Callao, frente a lo que fue la casa de otra santa limeña, Santa Rosa de Lima. </p>
-            </div>
-        
-            <div class="child7">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15608.017810045114!2d-77.0361134!3d-12.0432141!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa2acec83c306f930!2sHOSPITAL%20DE%20LA%20CARIDAD%20DE%20SAN%20MARTIN%20DE%20PORRES!5e0!3m2!1ses!2spe!4v1636747052953!5m2!1ses!2spe" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy">
-                </iframe>
             </div>
         </div>
     </div>
-
-
-<!--Footer de Página-->
-<footer>
-    <div class="flexFooter">
-        <div class="part1">
-            <h3> Enlaces de Interés </h3>
-            <ul>
-                <li> Trabaja con nosotros </li>
-                <li> Términos y condiciones </li>
-                <li> Políticas de privacidad </li>
-                <li> Libro de reclamaciones </li>
-            </ul>
-        </div>                                       
-        
-        <div class="part2">
-            <h3>Boletin Informativo</h3>
-            <p> Suscríbete a nuestro boletín y entérate de las novedades que tenemos para ti </p>
-                
-            <form action="#" method="post">
-            <!--espacio para ingresar el correo electrónico-->
-            <input type="email" style="width:400px; height: 25px; padding-left: 10px; font-size: 11px; border-radius: 5px; margin-right: 10px;" placeholder="Ingresa tu correo electrónico" name="email">
-            <!--botón de ENVIAR-->
-            <input class="parte2Submit" type="submit" style="color:white; font-family: 'Montserrat', sans-serif; background-color: rgb(0, 0, 153);
-            font-weight: bold; width:100px; height: 27px; border-radius: 8px;" value="ENVIAR">
-            </form>
-            <p class="notaParte2"> * Suscribiéndote, aceptas los Términos de Privacidad del Hospital de la Caridad de San Martín de Porres </p>
+    <div class="contenedorFlex">
+        <div class="item">
+            <h3> COMPROMISO </h3>
+            <p> "Yo te curo, Dios te sana" </p>
         </div>
-
-        <div class="part3">
-            <h3> Redes Sociales</h3>
-            <p> Encuéntranos en: </p>
-            <img class="homeImageRedes" src="../images/logo-facebook.png" alt="logo red social facebook">
-            <img class="homeImageRedes" src="../images/logo-instagram.png" alt="logo red social instagram">
+    </div>
+    <div class="contenedorFlex">
+        <div class="item"> 
+            <h3> MISIÓN </h3>
+            <p> Servicio y atención a los que más lo necesitan.</p>
+        </div>
+        <div class="item"> 
+            <h3> VISIÓN </h3>
+            <p> Ser un centro hospitalario que ofrezca hasta 30 especialidades y cubrir todas las necesidades de los pacientes. </p>
+        </div>
+    </div>
+    <div class="contenedorFlex">
+        <div class="item"> 
+            <div class="contenedorFlex2">
+            <div class="item"> 
+            <h3> NUESTRA SEDE </h3>
+            <p> A la fecha contamos con una sola sede, la misma que se encuentra en el centro de la ciudad de Lima, en Jr. Callao, frente a lo que fue la casa de otra santa limeña, Santa Rosa de Lima. </p>
+            </div>
+            <div class="item2"> 
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15608.017810045114!2d-77.0361134!3d-12.0432141!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa2acec83c306f930!2sHOSPITAL%20DE%20LA%20CARIDAD%20DE%20SAN%20MARTIN%20DE%20PORRES!5e0!3m2!1ses!2spe!4v1636747052953!5m2!1ses!2spe" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+            </div>
+            </div>
         </div>
     </div>
 
-        <div class="parte4">
-            <hr color="white" /><!--línea corta-->
-            <p class="parte4texto"> Hospital de la Caridad de San Martin de Porres, 2022 </p>
+    <!--Footer de Página-->
+    <footer>
+        <div class="contenedorFooter">
+            <div class="itemFooter1">
+                <h4> Enlaces de Interés </h4>
+                <ul>
+                    <li> Trabaja con nosotros </li>
+                    <li> Términos y condiciones </li>
+                    <li> Políticas de privacidad </li>
+                    <li> Libro de reclamaciones </li>
+                </ul>
+            </div>                                       
+            <div class="itemFooter2">
+                <h4>Boletin Informativo</h4>
+                <p class="textFooterBoletin">Suscríbete a nuestro boletín semanal</p>
+                <!--espacio para ingresar el correo electrónico-->
+                <div class="contenedorSuscripcion">
+                <form action="#" method="post">
+                    <input class="sendEmail" type="email" placeholder="Escribe tu correo electrónico" name="email">
+                    <!--Botón de ENVIAR-->
+                    <input class="parte2Submit" type="submit" value="ENVIAR">
+                </form>
+                </div>
+                <p class="textoCondicionSuscrip"> Suscribiéndote aceptas todos los Términos y Condiciones. </p>
+            </div>
+            <div class="itemFooter3">
+                <h4> Redes Sociales</h4>
+                <p> Encuéntranos en: 
+                <a href="https://www.facebook.com/HCSMPop/"><img class="footerImageRedes" src="./icons/facebook-icon.png" alt="logo red social facebook"></a>
+                <a href="https://www.instagram.com/explore/locations/124790134807522/museo-casa-de-san-martin-de-porres/"><img class="footerImageRedes" src="./icons/instagram-icon.png" alt="logo red social instagram"></a>
+                </p>
+            </div>
         </div>
+        <div class="contenedorFooter1">
+            <div class="itemFooter4">
+                <p class="parte4texto"> Hospital de la Caridad de San Martin de Porres, 2022 </p>
+            </div>
+        </div>
+    </footer>
 
-</footer>
-
-<!--Bundle JAVA-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!--JAVA Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 </body>
 </html>
