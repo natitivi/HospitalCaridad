@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <!--Descripción del site-->
+    <meta name="description" content="Hospital de la Caridad de San Martín de Porres es una institución de salud que ofrece campañas de salud y atenciones médicas gratuitas para los pacientes más necesitados.">
+    <!--Keywords-->
+    <meta name="keywords" content="hospital de la caridad, hospital de la caridad de san martin de porres, hospital de san martin de porres, hospital de la caridad">
     <!--Favicon-->
     <link rel="shortcut icon" href="../images/favicon-hospital-de-la-caridad.png">
     <!--CSS boostrap-->
@@ -12,7 +15,7 @@
     <!--Mi CSS-->
     <link rel="stylesheet" href="../css/estilos.css">
     <!--Titulo de la página-->
-    <title> Hospital de la Caridad </title>
+    <title> Especialidades </title>
 </head>
 
 <body>
@@ -67,20 +70,25 @@
     <!--Navbar enlaces internos del website-->
     <section>
         <input type="checkbox" id="btn-menu">
-        <label for="btn-menu"> <img src="./icons/hamburguesa-icon.png" alt="ícono menú hamburguesa desplegable"> </label>
+        <label for="btn-menu"> <img src="../icons/hamburguesa-icon.png" alt="ícono menú hamburguesa desplegable"> </label>
         <nav class="menu">
             <ul>
                 <li><a href="../index.html">  HOME  </a></li>
                 <li><a href="../pages/especialidades.html">  ESPECIALIDADES  </a></li>
-                <li><a href="">  SERVICIOS  </a></li>
-                <li><a href="">  CITAS  </a></li>
-                <li><a href="">  CONTACTANOS  </a></li>
+                <li><a href="../pages/servicios.html"">  SERVICIOS  </a></li>
+                <li><a href="../pages/reservatucita.html"">  CITAS  </a></li>
+                <li><a href="../pages/contactanos.html"">  CONTÁCTANOS  </a></li>
             </ul>
         </nav>
     </section>
     <!--Imágenes que describen el propósito de la página-->
     <section class="cabeceraImage">
       <img src="../images/especialidades.jpg" alt="grupo de fotos de doctores">
+  </section>
+  <!--Solo título de la pagina para que el usuario no se pierda-->
+  <section class="descripcionEspecialidad">
+      <h2> ESPECIALIDADES </h2>
+      <p>Seleccione la especialidad requerida para más detalles:</p>
   </section>
   <!--Lista de especialidades-->
   <div class="containerBody">
@@ -94,7 +102,7 @@
           <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
           <div class="accordion-body">
               Especialidad que se encarga del estudio, diagnóstico, tratamiento y prevención de  las enfermedades del corazón y los vasos sanguíneos, es decir, del aparato cardiovascular. Hay una serie de enfermedades cardiovasculares, pero las enfermedades del corazón y la circulación más comunes son: Hipertensión arterial (presión alta); enfermedad coronaria (angina, infartos, dolor de pecho); arritmias cardiacas (palpitaciones, taquicardias, mareos, desmayos); insuficiencia cardiaca (fatiga intensa, cansancio rápido, hinchazón de las piernas).
-              <p> <strong>Doctores de la especialidad :</strong> </p>
+              <p> Doctores de la especialidad : </p>
               <ul class="listaDoctores">
               <li>Figueroa, Roberto</li>
               <li>Ascencio, Manuel</li>
@@ -115,7 +123,7 @@
           <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
           <div class="accordion-body">
               Es la especialidad médica encargada de estudiar la estructura y funciones de la piel, así como los problemas y enfermedades que la afectan. Nuestra Unidad de Dermatología dispone de un destacado staff de médicos dermatólogos especialistas, dedicados a la prevención y tratamiento de todos los trastornos de la piel, que incluye las mucosas tanto de los labios, boca, como de los genitales; así como de sus anexos, conformados por los pelos y las uñas.
-              <p> <strong>Doctores de la especialidad :</strong> </p>
+              <p> Doctores de la especialidad : </p>
               <ul class="listaDoctores">
               <li>Albornoz, Vidal</li>
               <li>Dawson, Roberto</li>
@@ -134,7 +142,8 @@
           </h2>
           <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
           <div class="accordion-body">
-              Diagnóstico, tratamiento y prevención de los trastornos y enfermedades del aparato digestivo y sus anexos. Dicho aparato comienza en el esófago, extendiéndose hasta el ano, incluyendo estómago, intestino delgado (duodeno, yeyuno, íleon) e intestino grueso (colon, ciego y recto), hígado, vesícula biliar y páncreas. Contamos con diversos métodos de diagnóstico tanto invasivos como no invasivos. Asimismo, una unidad de evaluación endoscópica, en donde se realizan las endoscopías y colonoscopías diagnósticas y terapéuticas con equipos modernos y de calidad comprobada.<p> <strong>Doctores de la especialidad :</strong> </p>
+              Diagnóstico, tratamiento y prevención de los trastornos y enfermedades del aparato digestivo y sus anexos. Dicho aparato comienza en el esófago, extendiéndose hasta el ano, incluyendo estómago, intestino delgado (duodeno, yeyuno, íleon) e intestino grueso (colon, ciego y recto), hígado, vesícula biliar y páncreas. Contamos con diversos métodos de diagnóstico tanto invasivos como no invasivos. Asimismo, una unidad de evaluación endoscópica, en donde se realizan las endoscopías y colonoscopías diagnósticas y terapéuticas con equipos modernos y de calidad comprobada.
+              <p> Doctores de la especialidad : </p>
               <ul class="listaDoctores">
               <li>Casas, Diego</li>
               <li>Escobar, Federico</li>
@@ -155,7 +164,7 @@
           <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
           <div class="accordion-body">
               Es el primer nivel de atención médica. La consulta está orientada al abordaje integral del paciente en su aspecto físico, mental y social. Dependiendo del caso se procede a la identificación de factores de riesgo para enfermedades latentes o potenciales en corto, mediano y largo plazo; orientando al paciente sobre la manera más adecuada de prevenirlas e incentivando estilos de vida saludables. El médico general es el profesional capacitado para realizar el diagnóstico y tratamiento de diferentes patologías comunes de manera ambulatoria y derivar al especialista indicado cuando corresponda.
-              <p> <strong>Doctores de la especialidad :</strong> </p>
+              <p> Doctores de la especialidad : </p>
               <ul class="listaDoctores">
               <li>Robles, Orlando</li>
               <li>Zuñiga, Enrique</li>
@@ -177,7 +186,7 @@
           <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
           <div class="accordion-body">
               Especialidad médica que permite la asistencia integral enfocada en controlar el dolor y mejorar su capacidad funcional, acompañando a los tratamientos indicados por algunas otras especialidades médicas. Ellos logran en un primer momento controlar el dolor, y en una segunda fase flexibilizar y fortalecer la musculatura. Finalmente, en la tercera fase acondicionan todo el cuerpo para que el paciente mejore su independencia funcional y se reincorporen a sus actividades cotidianas en el más corto plazo posible. Existen muchas patologías, sobre todo las relacionadas al Sistema Músculo Esquelético, que requieren una  intervención multidisciplinaria. Por ejemplo las lumbalgias, cervicalgias, postoperados de columna, fracturas, esguinces o   contusiones de cadera, rodilla, tobillo, hombro, codo, muñeca, y dedos.
-              <p> <strong>Doctores de la especialidad :</strong> </p>
+              <p> Doctores de la especialidad : </p>
               <ul class="listaDoctores">
               <li>Almeriz, Gustavo</li>
               <li>Barrantes, Isidora</li>
@@ -199,7 +208,7 @@
           <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
           <div class="accordion-body">
               Busca mejorar la calidad de vida de las personas a través de tratamientos dietoterapéuticos y educación alimentaria nutricional. Se crean planes nutricionales de alimentación a medida para cada paciente, los cuales son establecidos de acuerdo a las metas que se han trazado en lo que respecta a peso y medidas. Dicha evaluación permite un enfoque integral para determinar el estado nutricional mediante la historia médica, nutricional y farmacológica. El examen físico, las medidas antropométricas y los datos de laboratorio, permiten tomar acciones para prevenir el desarrollo de enfermedades. Nuestros nutricionistas se enfocan en la evaluación integral del paciente. Eso significa conocer más allá de la problemática nutricional y comprender su estilo de vida, hábitos, rutinas y emociones. 
-              <p> <strong>Doctores de la especialidad :</strong> </p>
+              <p> Doctores de la especialidad : </p>
               <ul class="listaDoctores">
               <li>Krammer, Olenka</li>
               <li>Castillo, Odeth</li>
@@ -220,7 +229,7 @@
           <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
           <div class="accordion-body">
               Nos encargamos de solucionar los problemas primarios que presenten los pacientes realizando una exhaustiva historia clínica para establecer un diagnóstico y un plan de tratamiento. A partir  de las particularidades de cada paciente y de la complejidad de las patologías, se le deriva al equipo de especialistas que realizarán el abordaje terapéutico y el seguimiento al tratamiento.
-              <p> <strong>Doctores de la especialidad :</strong> </p>
+              <p> Doctores de la especialidad : </p>
               <ul class="listaDoctores">
               <li>Cisneros, Alberto</li>
               <li>Diaz, Raúl</li>
@@ -242,7 +251,7 @@
           <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
           <div class="accordion-body">
               Nuestros psicólogos identifican, relacionan e integran conocimientos teóricos referidos a la psicología como ciencia y como profesión, haciendo uso crítico, pertinente y eficaz de ellos, de acuerdo con diferentes contextos socioculturales. Realizamos evaluaciones psicológicas integrales, terapia individual, terapia de pareja, terapia familiar,  orientación vocacional y seguimiento de casos a niños, adolescentes y adultos.
-              <p> <strong>Doctores de la especialidad :</strong> </p>
+              <p> Doctores de la especialidad : </p>
               <ul class="listaDoctores">
               <li>Galindo, Roxana</li>
               <li>Miota, Roel</li>
